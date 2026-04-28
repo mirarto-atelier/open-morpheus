@@ -94,7 +94,7 @@ const LINK_COLORS = {
 let currentLayout = 'cose';
 let currentBranch = 'all';
 
-fetch('/benchmark/conv-50-graph.json').then(r => r.json()).then(data => {
+fetch('/open-morpheus/benchmark/conv-50-graph.json').then(r => r.json()).then(data => {
   document.getElementById('graph-stats').textContent = `${data.nodes.length} nodes, ${data.edges.length} edges`;
 
   const elems = [];
