@@ -1,0 +1,1357 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-benchmark/conv-41-results" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Conv-41: John &amp; Maria | Morpheus</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mirarto-atelier.github.io/open-morpheus/docs/benchmark/conv-41-results"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Conv-41: John &amp; Maria | Morpheus"><meta data-rh="true" name="description" content="32 sessions, 663 turns, 184 questions. 512 nodes, 1413 edges."><meta data-rh="true" property="og:description" content="32 sessions, 663 turns, 184 questions. 512 nodes, 1413 edges."><link data-rh="true" rel="icon" href="/open-morpheus/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://mirarto-atelier.github.io/open-morpheus/docs/benchmark/conv-41-results"><link data-rh="true" rel="alternate" href="https://mirarto-atelier.github.io/open-morpheus/docs/benchmark/conv-41-results" hreflang="en"><link data-rh="true" rel="alternate" href="https://mirarto-atelier.github.io/open-morpheus/docs/benchmark/conv-41-results" hreflang="x-default"><script>window.appInsightsPluginConfig={config:{connectionString:"InstrumentationKey=f1b16aa9-7f5c-4734-b032-ed9b8fc8b428;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://westus2.livediagnostics.monitor.azure.com/"},id:"default"}</script>
+
+
+
+<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5QYCBigCGMqujgAAB+1JREFUWMPtlmt0VcUZhr/ZM/t6LknOyc2YGwE0IKAiqBUqWo2rUpW6aNSKWDFyr0hRl1ohUhMFFagCJiiXUgQ1GAkEBCKVStBYISlQLhIhTWIETRSSc3LO2Xtmz+zpDxbaWmovf8vze9Z6n3fWN+sbgPOc5/8d9O8OrH3jAMx+ZANMmHLtYAQyFouz1kE5KTB+2tXwzMxNlyEE3fEYbR+QkwI/uGsorC/dOlRR0Fd2jHXcMnEEDL+t8H8XWPPmQdi+9RAU9E8fYcecVxTP6wxY2uTPmjuPX5geuM7udZYhz2sL+PQpbfs72rKzU4qciFOhSGgOhnxTE1GnY/rLYyGjT+i/F1jxxkGo3bgfBg3JvpYm6CIMsBWYmyW5yNYRepPF6HSCYLNnswLgXqoG6G3W6/ySIFQjHTFISun3Bc3pdpy231xyDYwoHnTOHOWc4esPw+Zth2DQ0LxRDuOLFYLfys0JPZ0a9j+MJLBEgq3EKt5xa/GV5aFwYBZ4EttxuhxreFM41agwA7hJUZCMR+wK06/nbVvZAHs3Hf3PBJZXfwKb647CwCG5o2zKlyoYV+dmJS3a/d5hHonaw6SUWRgrewT3hu3YeqBvLGoPkwAZClb2Cu5dHUuIMFHRdsOPGxSMvHiPXWn69LxNFfWwr+7T7xdYtekYbKw7CgMHXzjKYWIpJnhjZnpgwZ4/tbj9CrNupJQvwipZl5ERvFVB0BLrSVQ5lC8gGlmRmhG8DUn5ZTzivMxdnCAqesfw450IQU88Yleafj3v7d++D/XrDp5boLLmGNS+9ykMvjR7lM3EUoUoG9NT/c807Wl1cvLTbnQYX4hV/Pv8/PCSY3/5/GuV4J2e8PoBgGb4tF29MeerYMj3MJLweTxiVwoX24EUfVkg5JsBCE6dlXh3zUdwbO/n/ziEFbUtsHnHURg8IPM6artLMMgNF6SY8w42tTpZmUlFzGELCMDqvjkpS6qX7+LDR/Yf7SbYs6qC1kjb7ee5otDUyFQ3RpsDKkmJfh1/QUqZa/r1qczhLf5kMzV6Kr5IAqRafn0qtVn75T8qhLGPjQK0uLYF3v3grzCgX9r11GZLMEB1ZtCYt29vC83LCRUxmy0kCFb1uSBpae1rDXzo1QWjmc3mE4DKK67If+X4gQ5/pCv6HLii0NTVKTRGm/26ltzbHV8AEvLMgDGFOW6L5TfCsZ7EIilluhU0ptox2nZLyQ8Bo7wxMPCi9OscxpdipFRnJFvz9u1vp/k54SLG+EKClVX5WclLq1/7gA8fedFol/H5BCuVF/fPfPXEl1GPfdVLrYCxm8Xp5a7jTjB09SM7QU8Ek6x66vCrOOX3GD69wYmzE74kc7dL+UiX8jstv/HBJ3taI+iR1Ydvpo47H4PckBE05jcfOUkzQlYRddgCgmBln4xgRf2OQ7ygIO1McwUq+ueGl5/qSYjHSosAAODpe9aCZmrBSGdkvmRioGXokxl1my2/kdzbnXgBpMy3gsYU5vAWy6+HervP3IQvaD6oeFIOlQDJmorrO7ptuvqlnSA8OURKCKgE7zl+Msqr3hgPwvMuAwSmppG9R9u+Fn36p38zSOHMINQs3x7FWNkjhewruMhntgu/fuveHkKURunJiz0ucznj8Pj68acVojR5niwUwsvHP73/kb2JBNNcJmYYGB0eck1BR2ayud+xWYpL3ekGhv1Dr7r7ZFqy1UQTLMN13Mk6VpqOf9rVWfKLmXBD4Rh4cOFt0Hakp5hT/gRR8W9u+PGlG68cfRlKPXXJOO7yWaquzpn7TsmWSGdCeb2sbgJ3xXRNJ4/P3VKyDY+4ZQoPBY2P43Ea5kzMsjR8qPN0ojUrZDU4CZbDGZ9hqsq+nqjTnppsNtAE68upO83SSeOJz053zq0YC0+OW1vMGS9VCX5uzF1XrUvOToOql+ru5i5/gmikvGzbxKrq+buUfX9svk+4YhZRSWl53aSNKR2XnHmGpasPgWlqWldn5FGPi9t1jGZEo05DbsgwTnVFZ0tX3KQTNC0Ro42ZSabV3RWdK10x0tDINNHr9OM2e4og9NzYscPWYcuE6iV/OBOukrKy7ROrap6vV5p2Hj0TrpE55dsn1Sx+4C2YsaL422X01IoDYFq61tUZeVS4/HYDoxmRqN2QGzKN013R2Z4rinSCptsx1piZbFrdnZFSj/Ix4ApPVdCzPxl96etW/zR4e07tOE7549+Ev7BbaXrvk7PN55TXTap5ccJ6mPm7OwAAAJ8V2FW7DEbeVCKSgubHdpyGOOOzfDo51HUq0ZqV6mtw4iybu/xBU8f7Dza2taeF/Zmc8TsQyISuq8uefnLtF0onHceZeEIluKxs+8SqDc/XK3/+++Z1k2qWPFAND60q/tfreG5FI1iWpn35Rc+jnitu1zE81N2d+LBPut843RWZ7bniBiLkFkHdYhWhxdJmF3lMjCTCqxOOW0yQ8kx5bUnVyllblNbDJycIV8wkGin9bvOz4O8KvP/Oq3DN9feJ5CTfx3bcCQku7gsnWe9y7kUCltZA4/RCwcX9BCtl8yp/tqbx/dYPWYL2Fa4YrxI8p/zFe9fP+flKiPXYw13qlhINl5XXTa558f5/Dv/eD8lTCz8EkNJkjA/QiHJYQYjK01FAgHzc5QWmrh7BWBG0oxsUBQWEK/J9Pu2IghXR294NClaSPOHlBMP+IwDg/Wr1nXCe85znXPwN6ZMeVwoNBmsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEtMDYtMDJUMDY6NDA6MDIrMDA6MDCGa5E0AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA2LTAyVDA2OjQwOjAyKzAwOjAw9zYpiAAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="><link rel="stylesheet" href="/open-morpheus/assets/css/styles.77e5d99b.css">
+<script src="/open-morpheus/assets/js/runtime~main.e5afc058.js" defer="defer"></script>
+<script src="/open-morpheus/assets/js/main.a6061e94.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/open-morpheus/"><div class="navbar__logo"><img src="/open-morpheus/img/apple-touch-icon-precomposed.png" alt="Morpheus Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/open-morpheus/img/apple-touch-icon-precomposed.png" alt="Morpheus Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Morpheus</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/open-morpheus/docs/benchmark">Benchmark</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><span class="DocSearch-Button-Key">⌘</span><span class="DocSearch-Button-Key">K</span></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/open-morpheus/docs/benchmark">LOCOMO Benchmark</a><button aria-label="Collapse sidebar category &#x27;LOCOMO Benchmark&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/error-analysis">Error Analysis</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/correction-analysis">Correction Analysis</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/inference-cost">Inference Cost</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-26-results">Conv-26: Caroline &amp; Melanie</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-30-results">Conv-30: Jon &amp; Gina</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/open-morpheus/docs/benchmark/conv-41-results">Conv-41: John &amp; Maria</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-42-results">Conv-42: Joanna &amp; Nate</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-43-results">Conv-43: Tim &amp; John</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-44-results">Conv-44: Audrey &amp; Andrew</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-47-results">Conv-47: James &amp; John</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-48-results">Conv-48: Deborah &amp; Jolene</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-49-results">Conv-49: Evan &amp; Sam</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-morpheus/docs/benchmark/conv-50-results">Conv-50: Calvin &amp; Dave</a></li></ul></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/open-morpheus/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/open-morpheus/docs/benchmark"><span itemprop="name">LOCOMO Benchmark</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Conv-41: John &amp; Maria</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Conv-41: John &amp; Maria</h1>
+<p>32 sessions, 663 turns, 184 questions. 512 nodes, 1413 edges.</p>
+<p><strong>17 raw misses</strong> (90.8% raw). After rescoring: <strong>9 still wrong</strong> (95.1% rescored), <strong>8 rescued</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="all-questions-and-answers">All Questions and Answers<a href="#all-questions-and-answers" class="hash-link" aria-label="Direct link to All Questions and Answers" title="Direct link to All Questions and Answers">​</a></h2>
+<p><strong>Note on adversarial questions:</strong> The &quot;Expected&quot; column shows the answer to the <em>original</em> (non-adversarial) version. Adversarial questions swap speakers, so the correct response is typically to abstain.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q0-multi-hop-">Q0 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q0-multi-hop-" class="hash-link" aria-label="Direct link to q0-multi-hop-" title="Direct link to q0-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> Who did Maria have dinner with on May 3, 2023?</p>
+<p><strong>Expected:</strong> her mother</p>
+<p><strong>Hypothesis:</strong> Maria had dinner with her mom on May 3, 2023 — they made dinner together.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q1-multi-hop-">Q1 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q1-multi-hop-" class="hash-link" aria-label="Direct link to q1-multi-hop-" title="Direct link to q1-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria donate her car?</p>
+<p><strong>Expected:</strong> 21 December 2022</p>
+<p><strong>Hypothesis:</strong> 2022-12-21</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q2-single-hop-">Q2 [single-hop] <span style="color:#2ea043">✓</span><a href="#q2-single-hop-" class="hash-link" aria-label="Direct link to q2-single-hop-" title="Direct link to q2-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What martial arts has John done?</p>
+<p><strong>Expected:</strong> Kickboxing, Taekwondo</p>
+<p><strong>Hypothesis:</strong> John has done taekwondo and kickboxing.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q3-single-hop-">Q3 [single-hop] <span style="color:#dc3545">✗</span><a href="#q3-single-hop-" class="hash-link" aria-label="Direct link to q3-single-hop-" title="Direct link to q3-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What type of volunteering have John and Maria both done?</p>
+<p><strong>Expected:</strong> Volunteering at a homeless shelter</p>
+<p><strong>Hypothesis:</strong> John and Maria both volunteered together at a food-related (food/meal) event in 2022. Maria reminded John of it on 2023-04-02, sharing a photo of them shaking hands in front of a food tray, calling it &quot;such a fulfilling experience.&quot;</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Source (session 3) says they went &quot;to a homeless shelter to give out food and supplies&quot;; the agent labeled this a &quot;food event&quot; rather than recognizing the homeless-shelter context (N5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q4-multi-hop-">Q4 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q4-multi-hop-" class="hash-link" aria-label="Direct link to q4-multi-hop-" title="Direct link to q4-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John join the online support group?</p>
+<p><strong>Expected:</strong> The week before 1 January 2023</p>
+<p><strong>Hypothesis:</strong> John joined the service-focused online group in late December 2022, approximately 2022-12-26 (he described it as &quot;last week&quot; during his 2023-01-01 conversation with Maria).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q5-multi-hop-">Q5 [multi-hop] <span style="color:#b58900">↑</span><a href="#q5-multi-hop-" class="hash-link" aria-label="Direct link to q5-multi-hop-" title="Direct link to q5-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria go to the beach?</p>
+<p><strong>Expected:</strong> December 2022</p>
+<p><strong>Hypothesis:</strong> Maria went to the beach on multiple occasions according to the graph:</p>
+<ul>
+<li><strong>~2022-05-15</strong> — During her transformative solo trip to Spain (exact date unknown), where she walked on the beach and tried surfing for the first time.</li>
+<li><strong>~2022-12-15</strong> — She went to the beach to watch the sunset and took a photo (described as &quot;last month&quot; in a 2023-01-01 conversation).</li>
+</ul>
+<p>The graph also references a Florida family vacation (childhood memory) and a sunset photo she shared from Florida on 2023-06-16, but specific beach visit dates beyond those above are not recorded.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Source (session 3, 2023-01-01): Maria says &quot;I took it at the beach last month&quot; → Dec 2022; agent correctly listed ~2022-12-15 with right reasoning. Listing additional accurate visits is broader-but-accurate scope (R3).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q6-single-hop-">Q6 [single-hop] <span style="color:#2ea043">✓</span><a href="#q6-single-hop-" class="hash-link" aria-label="Direct link to q6-single-hop-" title="Direct link to q6-single-hop-">​</a></h3>
+<p><strong>Question:</strong> Where has Maria made friends?</p>
+<p><strong>Expected:</strong> homeless shelter, gym, church</p>
+<p><strong>Hypothesis:</strong> Maria has made friends in three places:</p>
+<ul>
+<li><strong>At the homeless shelter where she volunteers</strong> — she became friends with a fellow volunteer (mentioned 2023-01-09) and met Jean there (2023-02-24).</li>
+<li><strong>At her church</strong> — she has church friends she goes camping with (2023-06-10), hikes with (~2023-07-16), picnics with (~2023-07-15), and does community work with (2023-08-04).</li>
+<li><strong>At her gym</strong> — she made friends she socializes with outside workouts, such as going to dinner with them (2023-07-07).</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q7-single-hop-">Q7 [single-hop] <span style="color:#2ea043">✓</span><a href="#q7-single-hop-" class="hash-link" aria-label="Direct link to q7-single-hop-" title="Direct link to q7-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What items des John mention having as a child?</p>
+<p><strong>Expected:</strong> A doll, a film camera</p>
+<p><strong>Hypothesis:</strong> John mentions having two items as a child:</p>
+<ul>
+<li>A comforting doll that always made him feel better</li>
+<li>A film camera, which he used to take plenty of beach pictures</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q8-open-domain-">Q8 [open-domain] <span style="color:#dc3545">✗</span><a href="#q8-open-domain-" class="hash-link" aria-label="Direct link to q8-open-domain-" title="Direct link to q8-open-domain-">​</a></h3>
+<p><strong>Question:</strong> What might John&#x27;s financial status be?</p>
+<p><strong>Expected:</strong> Middle-class or wealthy</p>
+<p><strong>Hypothesis:</strong> Based on the graph, John&#x27;s financial status appears uncertain/unstable as of the most recent data (August 2023):</p>
+<ul>
+<li>He was promoted to assistant manager at his mechanical engineering company on 2023-06-16, suggesting stable employment at that time.</li>
+<li>However, in August 2023, his mechanical engineering company tanked and he lost his job — he described the layoff as unexpected and &quot;really rough.&quot;</li>
+<li>As of 2023-08-05, he had a tentative lead on a tech company hardware-team role using his mechanical skills, but it was not yet confirmed.</li>
+<li>He had been exploring tech industry opportunities as of August 2023.</li>
+</ul>
+<p>So John&#x27;s financial status is likely strained or precarious — recently unemployed after his company collapsed, with a possible but unconfirmed new role on the horizon.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Agent&#x27;s &quot;strained/precarious&quot; focuses narrowly on the August 2023 layoff and contradicts the broader middle-class signals (engineer, recently promoted to assistant manager, family vacations, suburban life). Materially different conclusion (N5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q9-single-hop-">Q9 [single-hop] <span style="color:#2ea043">✓</span><a href="#q9-single-hop-" class="hash-link" aria-label="Direct link to q9-single-hop-" title="Direct link to q9-single-hop-">​</a></h3>
+<p><strong>Question:</strong> Who gave Maria&#x27;s family money when she was younger and her family was going through tough times?</p>
+<p><strong>Expected:</strong> Her aunt</p>
+<p><strong>Hypothesis:</strong> Maria&#x27;s aunt gave her family money/help when she was younger and they were struggling financially.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q10-multi-hop-">Q10 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q10-multi-hop-" class="hash-link" aria-label="Direct link to q10-multi-hop-" title="Direct link to q10-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria meet Jean?</p>
+<p><strong>Expected:</strong> February 24, 2023</p>
+<p><strong>Hypothesis:</strong> Maria met Jean on 2023-02-24 during her volunteer shift at the homeless shelter.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q11-single-hop-">Q11 [single-hop] <span style="color:#dc3545">✗</span><a href="#q11-single-hop-" class="hash-link" aria-label="Direct link to q11-single-hop-" title="Direct link to q11-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What people has Maria met and helped while volunteering?</p>
+<p><strong>Expected:</strong> David, Jean, Cindy, Laura</p>
+<p><strong>Hypothesis:</strong> While volunteering (primarily at the homeless shelter), Maria has met and helped:</p>
+<ul>
+<li><strong>Jean</strong> — a homeless woman she met at the shelter on 2023-02-24 who had been through divorce, lost her job, and become homeless</li>
+<li><strong>Cindy</strong> — a shelter resident who wrote a heartfelt thank-you note expressing gratitude for volunteer support</li>
+<li><strong>Laura</strong> — a shelter resident who wrote Maria a thank-you letter about the impact volunteers made on her life</li>
+<li><strong>A lonely 8-year-old girl with no family</strong> — Maria comforted her at a shelter kids&#x27; event (~2023-01-21), sitting with her, listening, and ending up laughing together</li>
+<li><strong>Three smiling kids</strong> at the homeless shelter (~2023-07-03)</li>
+<li><strong>Shelter residents at the front desk</strong> — Maria distributed food and beds to them (e.g., 2023-08-11)</li>
+<li><strong>A fellow volunteer</strong> — Maria became friends with another volunteer who also loves helping others (~Jan 2023)</li>
+</ul>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Single-hop list-completeness: hypothesis lists Jean, Cindy, Laura plus extras but omits David from the expected (David, Jean, Cindy, Laura). Missing one expected name (N5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q12-single-hop-">Q12 [single-hop] <span style="color:#2ea043">✓</span><a href="#q12-single-hop-" class="hash-link" aria-label="Direct link to q12-single-hop-" title="Direct link to q12-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What test has John taken multiple times?</p>
+<p><strong>Expected:</strong> The military aptitude test</p>
+<p><strong>Hypothesis:</strong> The military aptitude test — John failed it in late 2022 and successfully retook it in early March 2023.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q13-multi-hop-">Q13 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q13-multi-hop-" class="hash-link" aria-label="Direct link to q13-multi-hop-" title="Direct link to q13-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria&#x27;s grandmother pass away?</p>
+<p><strong>Expected:</strong> The week before 6 March 2023</p>
+<p><strong>Hypothesis:</strong> Maria&#x27;s grandmother passed away approximately 2023-02-27 (late February 2023). Maria mentioned it to John on 2023-03-06, saying her grandma had passed away &quot;last week.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q14-open-domain-">Q14 [open-domain] <span style="color:#2ea043">✓</span><a href="#q14-open-domain-" class="hash-link" aria-label="Direct link to q14-open-domain-" title="Direct link to q14-open-domain-">​</a></h3>
+<p><strong>Question:</strong> Would John be considered a patriotic person?</p>
+<p><strong>Expected:</strong> Yes</p>
+<p><strong>Hypothesis:</strong> Yes, John would very likely be considered a patriotic person. The evidence is strong:</p>
+<ul>
+<li>He <strong>served in the military</strong> (confirmed 2023-07-31).</li>
+<li>He told Maria his political motivation comes from a &quot;strong urge to serve country and community&quot; (2023-02-05).</li>
+<li>He is <strong>passionate about supporting military veterans and their rights</strong>, saying &quot;I&#x27;ve always had a great respect for our military.&quot;</li>
+<li>He participated in a <strong>march for veterans&#x27; rights</strong> (~2023-07-02) and runs a <strong>petition to support military veterans</strong> (May 2023).</li>
+<li>He visited a veterans hospital, took his family to a <strong>military memorial</strong>, and is part of a virtual veterans support group he calls &quot;family.&quot;</li>
+<li>He believes it&#x27;s important to <strong>teach kids to respect and appreciate those who served</strong> in the military.</li>
+<li>He felt drawn to serve his country through volunteering after his aptitude test retake (March 2023).</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q15-single-hop-">Q15 [single-hop] <span style="color:#2ea043">✓</span><a href="#q15-single-hop-" class="hash-link" aria-label="Direct link to q15-single-hop-" title="Direct link to q15-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What writing classes has Maria taken?</p>
+<p><strong>Expected:</strong> Poetry, creative writing</p>
+<p><strong>Hypothesis:</strong> Maria has taken two writing classes:</p>
+<ol>
+<li><strong>Creative writing class</strong> — completed shortly before February 2023; she described it as &quot;super enlightening.&quot;</li>
+<li><strong>Poetry class</strong> — ongoing as of April 2023; she&#x27;s taking it to help put her feelings into words.</li>
+</ol>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q16-multi-hop-">Q16 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q16-multi-hop-" class="hash-link" aria-label="Direct link to q16-multi-hop-" title="Direct link to q16-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John get his degree?</p>
+<p><strong>Expected:</strong> The week before 2 April 2023</p>
+<p><strong>Hypothesis:</strong> John got his university degree around March 26, 2023 (the week before April 2, 2023, when he told Maria &quot;I graduated last week!&quot;).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q17-open-domain-">Q17 [open-domain] <span style="color:#dc3545">✗</span><a href="#q17-open-domain-" class="hash-link" aria-label="Direct link to q17-open-domain-" title="Direct link to q17-open-domain-">​</a></h3>
+<p><strong>Question:</strong> What might John&#x27;s degree be in?</p>
+<p><strong>Expected:</strong> Political science, Public administration, Public affairs</p>
+<p><strong>Hypothesis:</strong> John&#x27;s degree is likely in <strong>mechanical engineering</strong>. The graph shows he worked at a mechanical engineering company (which tanked in August 2023), and he was looking at a tech company hardware-team role that would leverage his mechanical engineering skills — strongly suggesting his university degree (completed late March 2023) was in mechanical engineering.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Source (session 9, 2023-04-02): John says he&#x27;s &quot;considering policymaking because of my degree&quot; — strongly implying a public-affairs / political-science degree. Agent inferred mechanical engineering from his employer, missing the explicit degree↔policy link (N1).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q18-single-hop-">Q18 [single-hop] <span style="color:#2ea043">✓</span><a href="#q18-single-hop-" class="hash-link" aria-label="Direct link to q18-single-hop-" title="Direct link to q18-single-hop-">​</a></h3>
+<p><strong>Question:</strong> Who did John go to yoga with?</p>
+<p><strong>Expected:</strong> Rob</p>
+<p><strong>Hypothesis:</strong> John went to yoga with his colleague Rob, who invited him to a beginner&#x27;s yoga class in late February 2023.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q19-single-hop-">Q19 [single-hop] <span style="color:#2ea043">✓</span><a href="#q19-single-hop-" class="hash-link" aria-label="Direct link to q19-single-hop-" title="Direct link to q19-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What damages have happened to John&#x27;s car?</p>
+<p><strong>Expected:</strong> Broken windshield, Car broke down</p>
+<p><strong>Hypothesis:</strong> Two damage incidents to John&#x27;s car appear in the graph:</p>
+<ol>
+<li>
+<p><strong>Broken windshield (~2023-01-05)</strong> — On his way home, John&#x27;s car windshield broke. He stayed calm, asked for assistance, and made it home safely.</p>
+</li>
+<li>
+<p><strong>Car broke down (2023-04-07, Friday)</strong> — His car broke down on his way to work. Getting it fixed was tough and put a strain on his wallet.</p>
+</li>
+</ol>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q20-multi-hop-">Q20 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q20-multi-hop-" class="hash-link" aria-label="Direct link to q20-multi-hop-" title="Direct link to q20-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John take a road trip to the Pacific Northwest?</p>
+<p><strong>Expected:</strong> 2022</p>
+<p><strong>Hypothesis:</strong> John returned from his family road trip to the Pacific Northwest on 2022-12-16.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q21-single-hop-">Q21 [single-hop] <span style="color:#dc3545">✗</span><a href="#q21-single-hop-" class="hash-link" aria-label="Direct link to q21-single-hop-" title="Direct link to q21-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What areas of the U.S. has John been to or is planning to go to?</p>
+<p><strong>Expected:</strong> Pacific northwest, east coast</p>
+<p><strong>Hypothesis:</strong> Based on the memory graph:</p>
+<p><strong>Been to:</strong></p>
+<ul>
+<li><strong>Pacific Northwest</strong> — explored the coast and national parks during a family road trip (returned 2022-12-16)</li>
+<li><strong>California</strong> — family vacation with a sunset and shore stroll</li>
+</ul>
+<p><strong>Planning to go to:</strong></p>
+<ul>
+<li><strong>East Coast</strong> — planned trip as of 2023-04-18 (no further details given)</li>
+</ul>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Source has only Pacific NW (session 11) and East Coast plan (session 12); California is not mentioned anywhere — agent appears to have invented the &quot;California family vacation&quot; (N1, mixing John&#x27;s general beach reference with Maria&#x27;s Florida vacation).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q22-multi-hop-">Q22 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q22-multi-hop-" class="hash-link" aria-label="Direct link to q22-multi-hop-" title="Direct link to q22-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John go to a convention with colleagues?</p>
+<p><strong>Expected:</strong> March 2023</p>
+<p><strong>Hypothesis:</strong> John attended a tech-for-good convention with his colleagues in March 2023 (estimated 2023-03-15; described as &quot;last month&quot; during a 2023-04-18 conversation with Maria, exact day unknown).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q23-single-hop-">Q23 [single-hop] <span style="color:#dc3545">✗</span><a href="#q23-single-hop-" class="hash-link" aria-label="Direct link to q23-single-hop-" title="Direct link to q23-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What desserts has Maria made?</p>
+<p><strong>Expected:</strong> Banana split sundae, Peach cobbler</p>
+<p><strong>Hypothesis:</strong> Based on the memory graph, Maria has made:</p>
+<ul>
+<li><strong>Peach cobbler</strong> (mentioned 2022-12-22)</li>
+<li><strong>Homemade desserts</strong> as part of a dinner she cooked with her mom (2023-05-03)</li>
+<li><strong>Cakes</strong> (2023-07-22, when she left to bake some)</li>
+<li><strong>Baked goods</strong> that she dropped off at the homeless shelter (~2023-07-26, likely connected to the 2023-07-22 cake-baking)</li>
+</ul>
+<p>Specific dessert types beyond peach cobbler and cakes are not detailed in the graph.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Source (session 13): Maria says &quot;My favorite is the amazing banana split sundae&quot; among her homemade desserts. Agent listed peach cobbler + cakes/baked goods but missed banana split sundae — incomplete list (N5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q24-multi-hop-">Q24 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q24-multi-hop-" class="hash-link" aria-label="Direct link to q24-multi-hop-" title="Direct link to q24-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John start boot camp with his family?</p>
+<p><strong>Expected:</strong> April.2023</p>
+<p><strong>Hypothesis:</strong> April 2023 (around 2023-04-15, estimated mid-April; exact day unknown). John told Maria on 2023-05-04 that he had &quot;just started going to boot camps with my fam last month.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q25-single-hop-">Q25 [single-hop] <span style="color:#2ea043">✓</span><a href="#q25-single-hop-" class="hash-link" aria-label="Direct link to q25-single-hop-" title="Direct link to q25-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What European countries has Maria been to?</p>
+<p><strong>Expected:</strong> Spain, England</p>
+<p><strong>Hypothesis:</strong> Maria has been to two European countries:</p>
+<ul>
+<li><strong>Spain</strong> — a transformative solo trip in 2022 (where she also tried surfing for the first time)</li>
+<li><strong>England</strong> — visited London a few years ago and was mesmerized by the architecture and castles</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q26-single-hop-">Q26 [single-hop] <span style="color:#2ea043">✓</span><a href="#q26-single-hop-" class="hash-link" aria-label="Direct link to q26-single-hop-" title="Direct link to q26-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What has Maria done to feel closer to her faith?</p>
+<p><strong>Expected:</strong> Join a local church, buy a cross necklace</p>
+<p><strong>Hypothesis:</strong> To feel closer to her faith, Maria has:</p>
+<ul>
+<li><strong>Bought a cross necklace</strong> in April 2023, saying it was specifically &quot;to feel closer to my faith.&quot;</li>
+<li><strong>Joined a nearby church</strong> on 2023-05-05 to feel closer to community and her faith.</li>
+<li><strong>Did community work with friends from her church</strong> (2023-08-04).</li>
+<li><strong>Had a picnic with church friends</strong> (~2023-07-15), playing charades and a scavenger hunt.</li>
+<li><strong>Hiked with church friends</strong> and reached the summit (~2023-07-16).</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q27-multi-hop-">Q27 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q27-multi-hop-" class="hash-link" aria-label="Direct link to q27-multi-hop-" title="Direct link to q27-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John have a party with veterans?</p>
+<p><strong>Expected:</strong> The Friday before 20 May 2023</p>
+<p><strong>Hypothesis:</strong> 2023-05-19</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q28-single-hop-">Q28 [single-hop] <span style="color:#2ea043">✓</span><a href="#q28-single-hop-" class="hash-link" aria-label="Direct link to q28-single-hop-" title="Direct link to q28-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What causes does John feel passionate about supporting?</p>
+<p><strong>Expected:</strong> Veterans, schools, infrastructure</p>
+<p><strong>Hypothesis:</strong> John feels passionate about supporting these causes:</p>
+<ul>
+<li><strong>Military veterans and their rights</strong> — his primary advocacy focus; he runs petitions, hosts gatherings, and participates in marches.</li>
+<li><strong>Education</strong> — particularly improving schools and helping underprivileged kids (he volunteers at career fairs at local schools).</li>
+<li><strong>Infrastructure</strong> — improving community infrastructure, alongside education as his main political focus.</li>
+<li><strong>Domestic abuse victims</strong> — he&#x27;s done event work with a local advocacy organization, raising awareness and funds.</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q29-single-hop-">Q29 [single-hop] <span style="color:#2ea043">✓</span><a href="#q29-single-hop-" class="hash-link" aria-label="Direct link to q29-single-hop-" title="Direct link to q29-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What events is Maria planning for the homeless shelter funraiser?</p>
+<p><strong>Expected:</strong> Chili cook-off, ring-toss tournament</p>
+<p><strong>Hypothesis:</strong> Maria is planning two events for the homeless shelter fundraiser (May/June 2023):</p>
+<ol>
+<li><strong>Chili cook-off</strong> — the headline event; she shared a promotional poster with John on 2023-05-25.</li>
+<li><strong>Ring-toss tournament</strong> — planned for the same fundraiser (May 2023).</li>
+</ol>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q30-single-hop-">Q30 [single-hop] <span style="color:#2ea043">✓</span><a href="#q30-single-hop-" class="hash-link" aria-label="Direct link to q30-single-hop-" title="Direct link to q30-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What shelters does Maria volunteer at?</p>
+<p><strong>Expected:</strong> The homeless shelter, the dog shelter</p>
+<p><strong>Hypothesis:</strong> Maria volunteers at:</p>
+<ul>
+<li>A homeless shelter (since ~August 2022)</li>
+<li>A local dog shelter (started ~June 2023, once a month)</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q31-multi-hop-">Q31 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q31-multi-hop-" class="hash-link" aria-label="Direct link to q31-multi-hop-" title="Direct link to q31-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John get his dog Max?</p>
+<p><strong>Expected:</strong> In 2013</p>
+<p><strong>Hypothesis:</strong> The graph doesn&#x27;t record a direct date, but based on what&#x27;s there: Max was John&#x27;s family dog for 10 years and passed away shortly before 2023-06-03, so John got Max around mid-2013.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q32-single-hop-">Q32 [single-hop] <span style="color:#2ea043">✓</span><a href="#q32-single-hop-" class="hash-link" aria-label="Direct link to q32-single-hop-" title="Direct link to q32-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What outdoor activities has John done with his colleagues?</p>
+<p><strong>Expected:</strong> Hiking, mountaineering</p>
+<p><strong>Hypothesis:</strong> John has done the following outdoor activities with his colleagues/workmates:</p>
+<ol>
+<li>
+<p><strong>Hiking trip to a waterfall</strong> (around May 2023) — John went hiking with his workmates and a dog, posing for a group photo at a waterfall. He described his workmates as motivating and supportive during his demanding veterans petition work.</p>
+</li>
+<li>
+<p><strong>Mountaineering trip</strong> (~2023-06-07) — John went mountaineering with some workmates and reached the summit. He described it as &quot;tough but awesome,&quot; with stunning views, and said the trip helped clear his head while he was still grieving Max.</p>
+</li>
+</ol>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q33-single-hop-">Q33 [single-hop] <span style="color:#2ea043">✓</span><a href="#q33-single-hop-" class="hash-link" aria-label="Direct link to q33-single-hop-" title="Direct link to q33-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What types of yoga has Maria practiced?</p>
+<p><strong>Expected:</strong> Aerial, kundalini</p>
+<p><strong>Hypothesis:</strong> Maria has practiced aerial yoga and kundalini yoga.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q34-multi-hop-">Q34 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q34-multi-hop-" class="hash-link" aria-label="Direct link to q34-multi-hop-" title="Direct link to q34-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria join a gym?</p>
+<p><strong>Expected:</strong> The week before 16 June 2023</p>
+<p><strong>Hypothesis:</strong> Maria joined a gym around 2023-06-09 (early June 2023). She mentioned it to John on 2023-06-16, describing it as having happened &quot;last week.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q35-single-hop-">Q35 [single-hop] <span style="color:#2ea043">✓</span><a href="#q35-single-hop-" class="hash-link" aria-label="Direct link to q35-single-hop-" title="Direct link to q35-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What states has Maria vacationed at?</p>
+<p><strong>Expected:</strong> Oregon, Florida</p>
+<p><strong>Hypothesis:</strong> Florida and Oregon.</p>
+<ul>
+<li><strong>Florida</strong> — family vacation with a stunning sunset over the water</li>
+<li><strong>Oregon</strong> — childhood family road trip that included a waterfall hike</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q36-single-hop-">Q36 [single-hop] <span style="color:#2ea043">✓</span><a href="#q36-single-hop-" class="hash-link" aria-label="Direct link to q36-single-hop-" title="Direct link to q36-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What music events has John attended?</p>
+<p><strong>Expected:</strong> Live music event, violin concert</p>
+<p><strong>Hypothesis:</strong> John has attended two music events:</p>
+<ol>
+<li><strong>Violin concert in town (~2023-03-01)</strong> — John found a violin concert in town that his whole family enjoyed.</li>
+<li><strong>Live music event with dancing (~2023-06-20)</strong> — John&#x27;s family had a blast at a live music event; he highlighted seeing them dancing and the amazing energy in the air.</li>
+</ol>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q37-single-hop-">Q37 [single-hop] <span style="color:#2ea043">✓</span><a href="#q37-single-hop-" class="hash-link" aria-label="Direct link to q37-single-hop-" title="Direct link to q37-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What events for veterans has John participated in?</p>
+<p><strong>Expected:</strong> Petition, march, party, visiting veterans hospital, 5K charity run</p>
+<p><strong>Hypothesis:</strong> Based on the memory graph, John has participated in the following events for veterans:</p>
+<ol>
+<li>
+<p><strong>Hosted a small party for veterans to share their stories</strong> (2023-05-19) — a gathering where veterans made connections and built camaraderie.</p>
+</li>
+<li>
+<p><strong>Participated in a march for veterans&#x27; rights</strong> (~2023-07-02).</p>
+</li>
+<li>
+<p><strong>Visited a veterans hospital</strong> where he met an elderly veteran named Samuel (~2023-07-10).</p>
+</li>
+<li>
+<p><strong>Visited a military memorial with his family</strong> (~2023-07-27) — his kids were awestruck and humbled.</p>
+</li>
+<li>
+<p><strong>Organized a 5K charity run</strong> in his neighborhood for veterans and their families (2023-08-05), raising funds through sponsors and city coordination.</p>
+</li>
+<li>
+<p><strong>Joined/expanded a virtual veterans support group</strong>, recruiting family and friends as military advocates (Aug 2023).</p>
+</li>
+</ol>
+<p>He has also been running a petition to support military veterans (May 2023) as part of his broader veterans advocacy work.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q38-multi-hop-">Q38 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q38-multi-hop-" class="hash-link" aria-label="Direct link to q38-multi-hop-" title="Direct link to q38-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria get in a car accident?</p>
+<p><strong>Expected:</strong> July 2, 2023</p>
+<p><strong>Hypothesis:</strong> 2023-07-02</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q39-open-domain-">Q39 [open-domain] <span style="color:#2ea043">✓</span><a href="#q39-open-domain-" class="hash-link" aria-label="Direct link to q39-open-domain-" title="Direct link to q39-open-domain-">​</a></h3>
+<p><strong>Question:</strong> Around which US holiday did Maria get into a car accident?</p>
+<p><strong>Expected:</strong> Independence Day</p>
+<p><strong>Hypothesis:</strong> Independence Day (July 4th). Maria&#x27;s car accident occurred on 2023-07-02, two days before the holiday.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q40-single-hop-">Q40 [single-hop] <span style="color:#2ea043">✓</span><a href="#q40-single-hop-" class="hash-link" aria-label="Direct link to q40-single-hop-" title="Direct link to q40-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What are the names of John&#x27;s children?</p>
+<p><strong>Expected:</strong> Kyle, Sara</p>
+<p><strong>Hypothesis:</strong> John&#x27;s children are <strong>Kyle</strong> (son) and <strong>Sara</strong> (daughter).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q41-open-domain-">Q41 [open-domain] <span style="color:#2ea043">✓</span><a href="#q41-open-domain-" class="hash-link" aria-label="Direct link to q41-open-domain-" title="Direct link to q41-open-domain-">​</a></h3>
+<p><strong>Question:</strong> Does John live close to a beach or the mountains?</p>
+<p><strong>Expected:</strong> beach</p>
+<p><strong>Hypothesis:</strong> John lives close to a beach. According to the graph, he takes weekly nature walks during which he sees ocean sunsets &quot;at least once a week&quot; — he shared a photo of an ocean sunset with a sailboat from one of these regular walks (told to Maria on 2023-07-05). His mountain experience, by contrast, was a one-off mountaineering trip with workmates, not a local activity.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q42-single-hop-">Q42 [single-hop] <span style="color:#2ea043">✓</span><a href="#q42-single-hop-" class="hash-link" aria-label="Direct link to q42-single-hop-" title="Direct link to q42-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What area was hit by a flood?</p>
+<p><strong>Expected:</strong> West County</p>
+<p><strong>Hypothesis:</strong> West County (John&#x27;s old neighborhood) was hit by a nasty flood around late June/early July 2023.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q43-multi-hop-">Q43 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q43-multi-hop-" class="hash-link" aria-label="Direct link to q43-multi-hop-" title="Direct link to q43-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When was John&#x27;s old area hit with a flood?</p>
+<p><strong>Expected:</strong> The week before 7 July 2023</p>
+<p><strong>Hypothesis:</strong> Late June/early July 2023 (approximately 2023-07-01). John told Maria on 2023-07-07 that his old area, West County, had been hit by a &quot;nasty flood last week,&quot; with many homes ruined due to poor infrastructure.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q44-single-hop-">Q44 [single-hop] <span style="color:#2ea043">✓</span><a href="#q44-single-hop-" class="hash-link" aria-label="Direct link to q44-single-hop-" title="Direct link to q44-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What activities has Maria done with her church friends?</p>
+<p><strong>Expected:</strong> Hiking, picnic, volunteer work</p>
+<p><strong>Hypothesis:</strong> Maria has done the following activities with her church friends:</p>
+<ul>
+<li><strong>Camping</strong> (~2023-06-10) — A weekend camping trip; she shared a campfire photo and described it as &quot;a blast&quot; that took her mind off things.</li>
+<li><strong>Picnic</strong> (~2023-07-15) — Chilled under the trees, played charades and a scavenger hunt, and ate food together.</li>
+<li><strong>Hiking</strong> (~2023-07-16) — Hiked and reached the summit, enjoying nature and the view; described it as refreshing and uplifting.</li>
+<li><strong>Community work</strong> (2023-08-04) — Took up community work with church friends, which she found &quot;super rewarding&quot; and tied to the importance of kindness and compassion.</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q45-open-domain-">Q45 [open-domain] <span style="color:#b58900">↑</span><a href="#q45-open-domain-" class="hash-link" aria-label="Direct link to q45-open-domain-" title="Direct link to q45-open-domain-">​</a></h3>
+<p><strong>Question:</strong> Would John be open to moving to another country?</p>
+<p><strong>Expected:</strong> No, he has goals specifically in the U.S. like joining the military and running for office.</p>
+<p><strong>Hypothesis:</strong> Likely no. The graph shows John is deeply rooted in his country and local community: he has a &quot;strong urge to serve my country and community,&quot; is pursuing local politics, runs community improvement projects in his old neighborhood (West County), organized a neighborhood veterans 5K, served in the military, and is passionate about veterans&#x27; rights. His family vacations stay domestic (California, East Coast trip planned). Nothing in the graph indicates any interest in living abroad, and his identity and career ambitions are tightly tied to serving his country and local area.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Hypothesis reaches the same &quot;No&quot; with explicitly grounded reasoning — local politics, veterans advocacy, military service — which matches the expected answer&#x27;s specific U.S.-bound goals (run for office, military). Defensible inference (R5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q46-multi-hop-">Q46 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q46-multi-hop-" class="hash-link" aria-label="Direct link to q46-multi-hop-" title="Direct link to q46-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria go hiking with her church friends?</p>
+<p><strong>Expected:</strong> The weekend before 22 July 2023</p>
+<p><strong>Hypothesis:</strong> Maria went hiking with her church friends around 2023-07-16 (the weekend before her 2023-07-22 conversation with John).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q47-single-hop-">Q47 [single-hop] <span style="color:#dc3545">✗</span><a href="#q47-single-hop-" class="hash-link" aria-label="Direct link to q47-single-hop-" title="Direct link to q47-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What exercises has John done?</p>
+<p><strong>Expected:</strong> Weight training, Circuit training, Kickboxing, yoga</p>
+<p><strong>Hypothesis:</strong> Based on the memory graph, John has done the following exercises:</p>
+<ul>
+<li><strong>Yoga</strong> — practices at a yoga studio with a chill vibe</li>
+<li><strong>Taekwondo</strong> — part of his fitness routine as of late 2022</li>
+<li><strong>Boot camps</strong> — attends with his family three times a week (started April 2023)</li>
+<li><strong>Kickboxing</strong> — his workout that gives him energy</li>
+<li><strong>Weight training</strong> — found it challenging but peaceful, like yoga</li>
+<li><strong>Nature walks</strong> — at least once a week</li>
+<li><strong>Hiking</strong> — went on a hiking trip with workmates at a waterfall</li>
+<li><strong>Camping</strong> — has gone many times</li>
+</ul>
+<p>He is also interested in trying rock climbing (as of June 2023), though that hasn&#x27;t been done yet.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Source (session 25, 2023-07-22): John mentions his gym offers yoga, kickboxing, and circuit training. Agent listed yoga + kickboxing + weight training but omitted circuit training — incomplete list on a single-hop question (N5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q48-multi-hop-">Q48 [multi-hop] <span style="color:#b58900">↑</span><a href="#q48-multi-hop-" class="hash-link" aria-label="Direct link to q48-multi-hop-" title="Direct link to q48-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John have his first firefighter call-out?</p>
+<p><strong>Expected:</strong> The sunday before 3` July 2023</p>
+<p><strong>Hypothesis:</strong> 2023-07-30 (the Sunday before he told Maria about it on 2023-07-31).</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Benchmark expected has typo &quot;3` July 2023&quot; — likely meant &quot;31 July 2023&quot; (Sunday before = July 30). Source (session 26, 2023-07-31): John says &quot;Last Sunday we had our first call-out&quot; → July 30, which is exactly the agent&#x27;s answer (R1).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q49-single-hop-">Q49 [single-hop] <span style="color:#b58900">↑</span><a href="#q49-single-hop-" class="hash-link" aria-label="Direct link to q49-single-hop-" title="Direct link to q49-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What food item did Maria drop off at the homeless shelter?</p>
+<p><strong>Expected:</strong> Cakes</p>
+<p><strong>Hypothesis:</strong> Baked goods (specifically items she had baked, likely connected to cakes she baked on 2023-07-22).</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Source: Maria said she&#x27;d &quot;bake some cakes&quot; (session 25, 2023-07-22) and then &quot;dropped off that stuff I baked at the homeless shelter&quot; (session 26, 2023-07-31) — agent identified cakes correctly even within the broader &quot;baked goods&quot; framing (R3).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q50-open-domain-">Q50 [open-domain] <span style="color:#dc3545">✗</span><a href="#q50-open-domain-" class="hash-link" aria-label="Direct link to q50-open-domain-" title="Direct link to q50-open-domain-">​</a></h3>
+<p><strong>Question:</strong> What attributes describe John?</p>
+<p><strong>Expected:</strong> Selfless, family-oriented, passionate, rational</p>
+<p><strong>Hypothesis:</strong> Based on the graph, John is described by the following attribute categories (direct child nodes under &quot;John&quot; in the semantic branch):</p>
+<ul>
+<li><strong>Family</strong> — family is his most important thing and biggest support system; has multiple children, a wife, and had a family dog Max (deceased mid-2023)</li>
+<li><strong>Education</strong> — graduated from a university degree program (~2023-03-26)</li>
+<li><strong>Day Job</strong> — mechanical engineering background; lost job in 2023, was promoted to assistant manager, later found a tech company hardware-team role</li>
+<li><strong>Political Career</strong> — pursuing local politics; focused on improving education and infrastructure; ran for office multiple times</li>
+<li><strong>Veterans Advocacy</strong> — organized veteran charity events, marches, and a virtual veterans support group</li>
+<li><strong>Volunteer &amp; Community Service</strong> — service-focused online group, food drives, mentoring, school career fairs</li>
+<li><strong>Fire-Fighting Brigade</strong> — joined a brigade; first call-out saved a family from a burning building</li>
+<li><strong>Fitness &amp; Wellbeing</strong> — does kickboxing, yoga, taekwondo, family boot camp, hiking, mountaineering</li>
+<li><strong>Outlook &amp; Values</strong> — values activism, looking out for others, balance, pushing out of comfort zones, being around like-minded people; inspired by family, exercise, and friends; has coping &amp; grounding practices</li>
+</ul>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Question asks for personality attributes (selfless, family-oriented, passionate, rational); agent returned life-domain CATEGORIES (Family, Education, Day Job, etc.) instead of adjectives. Wrong response shape (N5).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q51-multi-hop-">Q51 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q51-multi-hop-" class="hash-link" aria-label="Direct link to q51-multi-hop-" title="Direct link to q51-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria start volunteering at the homeless shelter?</p>
+<p><strong>Expected:</strong> Around August 2022</p>
+<p><strong>Hypothesis:</strong> Maria started volunteering at the homeless shelter around August 2022, after witnessing a family struggling on the streets and proactively reaching out to the shelter to ask if they needed volunteers.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q52-single-hop-">Q52 [single-hop] <span style="color:#2ea043">✓</span><a href="#q52-single-hop-" class="hash-link" aria-label="Direct link to q52-single-hop-" title="Direct link to q52-single-hop-">​</a></h3>
+<p><strong>Question:</strong> Who have written notes of gratitude to Maria?</p>
+<p><strong>Expected:</strong> Cindy, Laura</p>
+<p><strong>Hypothesis:</strong> Laura and Cindy, both residents of the homeless shelter where Maria volunteers, have written notes of gratitude to Maria:</p>
+<ul>
+<li><strong>Laura</strong> wrote a thank-you letter expressing gratitude (~2023-07-03)</li>
+<li><strong>Cindy</strong> wrote a heartfelt thank-you note expressing gratitude (2023-08-03)</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q53-multi-hop-">Q53 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q53-multi-hop-" class="hash-link" aria-label="Direct link to q53-multi-hop-" title="Direct link to q53-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John help renovate his hometown community center?</p>
+<p><strong>Expected:</strong> 2022</p>
+<p><strong>Hypothesis:</strong> John helped renovate the rundown community center in his hometown in approximately 2022 (he described it as &quot;last year&quot; when telling Maria about it on 2023-08-05).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q54-multi-hop-">Q54 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q54-multi-hop-" class="hash-link" aria-label="Direct link to q54-multi-hop-" title="Direct link to q54-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria take up community work with her church friends?</p>
+<p><strong>Expected:</strong> August 4, 2023</p>
+<p><strong>Hypothesis:</strong> 2023-08-04.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q55-multi-hop-">Q55 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q55-multi-hop-" class="hash-link" aria-label="Direct link to q55-multi-hop-" title="Direct link to q55-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria receive a medal from the homeless shelter?</p>
+<p><strong>Expected:</strong> The week before 9 August 2023</p>
+<p><strong>Hypothesis:</strong> Maria received the medal around 2023-08-04 (the week before her 2023-08-09 conversation with John, where she shared the news).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q56-multi-hop-">Q56 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q56-multi-hop-" class="hash-link" aria-label="Direct link to q56-multi-hop-" title="Direct link to q56-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John participate in a 5K charity run?</p>
+<p><strong>Expected:</strong> first weekend of August 2023</p>
+<p><strong>Hypothesis:</strong> John participated in (and organized) a 5K charity run for veterans on 2023-08-05.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q57-single-hop-">Q57 [single-hop] <span style="color:#2ea043">✓</span><a href="#q57-single-hop-" class="hash-link" aria-label="Direct link to q57-single-hop-" title="Direct link to q57-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What causes has John done events for?</p>
+<p><strong>Expected:</strong> Toy drive, Community food drive, veterans, domestic violence</p>
+<p><strong>Hypothesis:</strong> Based on the memory graph, John has done events for the following causes:</p>
+<ul>
+<li><strong>Homeless people</strong> — His online service group ran a food/supply drive at a homeless shelter (~2022-12-28); he also offered to help promote Maria&#x27;s homeless shelter chili cook-off fundraiser (2023-05-25)</li>
+<li><strong>Children in need</strong> — His online service group organized a toy drive (~2022-12-30)</li>
+<li><strong>Victims of domestic abuse</strong> — He worked with a local domestic abuse advocacy organization to raise awareness and funds</li>
+<li><strong>Veterans and their families</strong> — He organized a 5K charity run in his neighborhood (Aug 2023)</li>
+<li><strong>General community donation drive</strong> — His fire-fighting brigade ran a 2-hour donation drive collecting canned food, toiletries, and clothes (Aug 2023)</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q58-multi-hop-">Q58 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q58-multi-hop-" class="hash-link" aria-label="Direct link to q58-multi-hop-" title="Direct link to q58-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria get Coco?</p>
+<p><strong>Expected:</strong> Two weeks before 11 August 2023</p>
+<p><strong>Hypothesis:</strong> Maria adopted Coco around late July 2023 (approximately 2023-07-28, two weeks before she told John about it on 2023-08-11).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q59-multi-hop-">Q59 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q59-multi-hop-" class="hash-link" aria-label="Direct link to q59-multi-hop-" title="Direct link to q59-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did John go on a camping trip with Max?</p>
+<p><strong>Expected:</strong> The summer of 2022</p>
+<p><strong>Hypothesis:</strong> Summer 2022.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q60-single-hop-">Q60 [single-hop] <span style="color:#2ea043">✓</span><a href="#q60-single-hop-" class="hash-link" aria-label="Direct link to q60-single-hop-" title="Direct link to q60-single-hop-">​</a></h3>
+<p><strong>Question:</strong> What are Maria&#x27;s dogs&#x27; names?</p>
+<p><strong>Expected:</strong> Coco, Shadow</p>
+<p><strong>Hypothesis:</strong> Maria&#x27;s dogs are named <strong>Coco</strong> (a white puppy adopted in late July 2023) and <strong>Shadow</strong> (a black puppy adopted from a shelter in early August 2023).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q61-multi-hop-">Q61 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q61-multi-hop-" class="hash-link" aria-label="Direct link to q61-multi-hop-" title="Direct link to q61-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> When did Maria adopt Shadow?</p>
+<p><strong>Expected:</strong> The week before 13 August 2023</p>
+<p><strong>Hypothesis:</strong> Maria adopted Shadow approximately 2023-08-06 (described as &quot;last week&quot; before her 2023-08-13 conversation with John).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q62-single-hop-">Q62 [single-hop] <span style="color:#2ea043">✓</span><a href="#q62-single-hop-" class="hash-link" aria-label="Direct link to q62-single-hop-" title="Direct link to q62-single-hop-">​</a></h3>
+<p><strong>Question:</strong> How many dogs has Maria adopted from the dog shelter she volunteers at?</p>
+<p><strong>Expected:</strong> two</p>
+<p><strong>Hypothesis:</strong> Based on the memory graph, Maria has adopted <strong>two</strong> dogs:</p>
+<ol>
+<li><strong>Coco</strong> — a white puppy adopted around late July 2023</li>
+<li><strong>Shadow</strong> — a black puppy adopted from a shelter around early August 2023</li>
+</ol>
+<p>Both adoptions are consistent with her dog shelter volunteer work (she started volunteering at a local dog shelter once a month as of June 2023).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q63-multi-hop-">Q63 [multi-hop] <span style="color:#b58900">↑</span><a href="#q63-multi-hop-" class="hash-link" aria-label="Direct link to q63-multi-hop-" title="Direct link to q63-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> How many weeks passed between Maria adopting Coco and Shadow?</p>
+<p><strong>Expected:</strong> two weeks</p>
+<p><strong>Hypothesis:</strong> Approximately 1 week. Coco was adopted around 2023-07-28 and Shadow around 2023-08-06 — a gap of about 9 days.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Source: Coco &quot;two weeks ago&quot; before 2023-08-11 (~2023-07-28); Shadow &quot;last week&quot; before 2023-08-13 (~2023-08-06). Gap = 9 days, closer to 1 week than 2. Agent&#x27;s &quot;approximately 1 week&quot; matches the source; benchmark&#x27;s &quot;two weeks&quot; contradicts the math (R1).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q64-open-domain-">Q64 [open-domain] <span style="color:#2ea043">✓</span><a href="#q64-open-domain-" class="hash-link" aria-label="Direct link to q64-open-domain-" title="Direct link to q64-open-domain-">​</a></h3>
+<p><strong>Question:</strong> What job might Maria pursue in the future?</p>
+<p><strong>Expected:</strong> Shelter coordinator, Counselor</p>
+<p><strong>Hypothesis:</strong> Based on the graph, Maria has not explicitly stated a future career goal, but her patterns strongly suggest a few possibilities:</p>
+<ul>
+<li><strong>Social work or nonprofit/community work</strong> — She has volunteered at a homeless shelter since ~August 2022, gives talks there, considers the residents &quot;like family,&quot; builds relationships through deep listening and compassion, and frames her shelter work as her &quot;way of spreading kindness and positivity.&quot; She also volunteers at a dog shelter and does community work with church friends.</li>
+<li><strong>Baking/culinary</strong> — She frequently bakes (cakes, peach cobbler), drops off baked goods at the homeless shelter, and cooks with her mom — possibly combining her two passions into something like a charity-focused bakery.</li>
+</ul>
+<p>The most likely path, given how central it is to her sense of purpose, is a career in homeless services, social work, or nonprofit community outreach.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q65-temporal-">Q65 [temporal] <span style="color:#2ea043">✓</span><a href="#q65-temporal-" class="hash-link" aria-label="Direct link to q65-temporal-" title="Direct link to q65-temporal-">​</a></h3>
+<p><strong>Question:</strong> What is John&#x27;s main focus in local politics?</p>
+<p><strong>Expected:</strong> Improving education and infrastructure</p>
+<p><strong>Hypothesis:</strong> John&#x27;s main focus in local politics is improving education and infrastructure in his community. He believes schools and infrastructure should be funded properly.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q66-temporal-">Q66 [temporal] <span style="color:#2ea043">✓</span><a href="#q66-temporal-" class="hash-link" aria-label="Direct link to q66-temporal-" title="Direct link to q66-temporal-">​</a></h3>
+<p><strong>Question:</strong> What sparked John&#x27;s interest in improving education and infrastructure in the community?</p>
+<p><strong>Expected:</strong> Seeing how lack of education and crumbling infrastructure affected his neighborhood while growing up.</p>
+<p><strong>Hypothesis:</strong> Growing up, John saw firsthand how a lack of education and crumbling infrastructure affected his neighborhood. He said: &quot;Growing up, I saw how lack of education and crumbling infrastructure affected my neighborhood. I don&#x27;t want future generations to go through that.&quot; That experience shaped his belief that schools and infrastructure should be properly funded and motivated his focus on improving them in his community.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q67-temporal-">Q67 [temporal] <span style="color:#2ea043">✓</span><a href="#q67-temporal-" class="hash-link" aria-label="Direct link to q67-temporal-" title="Direct link to q67-temporal-">​</a></h3>
+<p><strong>Question:</strong> How did the extra funding help the school shown in the photo shared by John?</p>
+<p><strong>Expected:</strong> Enabled needed repairs and renovations, making the learning environment safer and more modern for students.</p>
+<p><strong>Hypothesis:</strong> The extra funding enabled needed repairs and renovations to the school, making the learning environment safer and more modern for students.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q68-temporal-">Q68 [temporal] <span style="color:#dc3545">✗</span><a href="#q68-temporal-" class="hash-link" aria-label="Direct link to q68-temporal-" title="Direct link to q68-temporal-">​</a></h3>
+<p><strong>Question:</strong> What type of workout class did Maria start doing in December 2023?</p>
+<p><strong>Expected:</strong> aerial yoga</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> X</p>
+<p><strong>Why missed:</strong> Source (session 1, 2022-12-17): Maria starts aerial yoga in Dec 2022 (same year-typo as Q69). Unlike Q69, agent here just abstained without surfacing the actual answer or flagging the year discrepancy (N3).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q69-temporal-">Q69 [temporal] <span style="color:#b58900">↑</span><a href="#q69-temporal-" class="hash-link" aria-label="Direct link to q69-temporal-" title="Direct link to q69-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Maria donate to a homeless shelter in December 2023?</p>
+<p><strong>Expected:</strong> old car</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows Maria donated her old car to a homeless shelter on 2022-12-21, but I found no record of a donation in December 2023.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Question asks about &quot;December 2023&quot; but source (session 2, 2022-12-22) only has the donation in December 2022 — benchmark question has a year typo. Agent correctly identified the date discrepancy AND named the actual item (&quot;old car&quot;) even while hedging on the bad year (R1).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q70-temporal-">Q70 [temporal] <span style="color:#2ea043">✓</span><a href="#q70-temporal-" class="hash-link" aria-label="Direct link to q70-temporal-" title="Direct link to q70-temporal-">​</a></h3>
+<p><strong>Question:</strong> What kind of meal did John and his family make together in the photo shared by John?</p>
+<p><strong>Expected:</strong> pizza</p>
+<p><strong>Hypothesis:</strong> Pizza. John and his family made pizza together, picking out toppings and sharing the meal.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q71-temporal-">Q71 [temporal] <span style="color:#2ea043">✓</span><a href="#q71-temporal-" class="hash-link" aria-label="Direct link to q71-temporal-" title="Direct link to q71-temporal-">​</a></h3>
+<p><strong>Question:</strong> What kind of online group did John join?</p>
+<p><strong>Expected:</strong> service-focused online group</p>
+<p><strong>Hypothesis:</strong> John joined a service-focused online group (in late December 2022, around 2022-12-26). The group is a community of people with a shared passion for serving, where members share stories, advice, and encouragement, and organize in-person service events like homeless shelter food/supply drives and toy drives.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q72-temporal-">Q72 [temporal] <span style="color:#2ea043">✓</span><a href="#q72-temporal-" class="hash-link" aria-label="Direct link to q72-temporal-" title="Direct link to q72-temporal-">​</a></h3>
+<p><strong>Question:</strong> What kind of activities did John and his mates from the online group do as part of their service efforts?</p>
+<p><strong>Expected:</strong> gave out food and supplies at a homeless shelter, organized a toy drive for kids in need</p>
+<p><strong>Hypothesis:</strong> John and his mates from the online service group:</p>
+<ul>
+<li><strong>Volunteered at a homeless shelter</strong> (~2022-12-28), giving out food and supplies</li>
+<li><strong>Organized a toy drive</strong> for kids in need (~2022-12-30)</li>
+<li><strong>Brainstormed initiatives</strong> for underserved communities — focused on education, mentorship, job training, and resume building</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q73-temporal-">Q73 [temporal] <span style="color:#2ea043">✓</span><a href="#q73-temporal-" class="hash-link" aria-label="Direct link to q73-temporal-" title="Direct link to q73-temporal-">​</a></h3>
+<p><strong>Question:</strong> Who inspired Maria to start volunteering?</p>
+<p><strong>Expected:</strong> Her aunt</p>
+<p><strong>Hypothesis:</strong> Maria&#x27;s aunt inspired her to start volunteering. Maria&#x27;s aunt believed in volunteering and had helped Maria&#x27;s family during a struggling period, which inspired Maria to volunteer to make a difference herself.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q74-temporal-">Q74 [temporal] <span style="color:#2ea043">✓</span><a href="#q74-temporal-" class="hash-link" aria-label="Direct link to q74-temporal-" title="Direct link to q74-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why did Maria sit with the little girl at the shelter event in February 2023?</p>
+<p><strong>Expected:</strong> The girl seemed sad and had no other family</p>
+<p><strong>Hypothesis:</strong> Maria noticed the little girl (about 8 years old) sitting all alone and seeming very sad, so she sat with her to give her comfort and a listening ear. They ended up talking, and Maria learned the girl had no other family — which broke her heart. They eventually laughed and had a good time together, and Maria called it the most impactful moment from the event.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q75-temporal-">Q75 [temporal] <span style="color:#2ea043">✓</span><a href="#q75-temporal-" class="hash-link" aria-label="Direct link to q75-temporal-" title="Direct link to q75-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Jean go through before meeting Maria?</p>
+<p><strong>Expected:</strong> divorce, job loss, homelessness</p>
+<p><strong>Hypothesis:</strong> Before meeting Maria, Jean went through a divorce, lost her job, and ended up homeless.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q76-temporal-">Q76 [temporal] <span style="color:#2ea043">✓</span><a href="#q76-temporal-" class="hash-link" aria-label="Direct link to q76-temporal-" title="Direct link to q76-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why did John decide to run for office again?</p>
+<p><strong>Expected:</strong> saw the impact he could make in the community through politics</p>
+<p><strong>Hypothesis:</strong> John decided to run for office again because he couldn&#x27;t let go of his dream to make a difference in his community. He told Maria he felt a strong urge to serve his country and community, and after his previous run he had seen the impact he could make in the community through politics, finding it rewarding to work toward positive changes and a better future. Despite past unsuccessful campaigns, he remained determined to keep trying.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q77-temporal-">Q77 [temporal] <span style="color:#2ea043">✓</span><a href="#q77-temporal-" class="hash-link" aria-label="Direct link to q77-temporal-" title="Direct link to q77-temporal-">​</a></h3>
+<p><strong>Question:</strong> What activity did John&#x27;s colleague, Rob, invite him to?</p>
+<p><strong>Expected:</strong> beginner&#x27;s yoga class</p>
+<p><strong>Hypothesis:</strong> A beginner&#x27;s yoga class.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q78-temporal-">Q78 [temporal] <span style="color:#2ea043">✓</span><a href="#q78-temporal-" class="hash-link" aria-label="Direct link to q78-temporal-" title="Direct link to q78-temporal-">​</a></h3>
+<p><strong>Question:</strong> What is the name of John&#x27;s one-year-old child?</p>
+<p><strong>Expected:</strong> Kyle</p>
+<p><strong>Hypothesis:</strong> Kyle.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q79-temporal-">Q79 [temporal] <span style="color:#b58900">↑</span><a href="#q79-temporal-" class="hash-link" aria-label="Direct link to q79-temporal-" title="Direct link to q79-temporal-">​</a></h3>
+<p><strong>Question:</strong> How often does John take his kids to the park?</p>
+<p><strong>Expected:</strong> A few times a week</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows John has taken his kids to the park on multiple occasions (2022-12-22, 2023-03-04, 2023-06-12, 2023-08-13) and that parks are part of their regular outdoor activities — but no specific frequency (e.g., weekly, monthly) is recorded.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> No source data specifies a frequency for John&#x27;s park visits — only one-off mentions (sessions 8, 18, 31). The &quot;three times a week&quot; in session 13 is about boot camps. Agent correctly identified that no specific frequency is recorded; benchmark&#x27;s &quot;A few times a week&quot; lacks source support (R1).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q80-temporal-">Q80 [temporal] <span style="color:#2ea043">✓</span><a href="#q80-temporal-" class="hash-link" aria-label="Direct link to q80-temporal-" title="Direct link to q80-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Maria make for her home to remind her of a trip to England?</p>
+<p><strong>Expected:</strong> painting of a castle on a hill</p>
+<p><strong>Hypothesis:</strong> Maria made a castle shadow box and a painting of a castle on a hill for her home, inspired by her trip to London, England, where she was mesmerized by the castles and architecture.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q81-temporal-">Q81 [temporal] <span style="color:#2ea043">✓</span><a href="#q81-temporal-" class="hash-link" aria-label="Direct link to q81-temporal-" title="Direct link to q81-temporal-">​</a></h3>
+<p><strong>Question:</strong> Where did Maria get the idea for the castle shadow box in her home?</p>
+<p><strong>Expected:</strong> England</p>
+<p><strong>Hypothesis:</strong> Maria got the idea from her trip to England (London) a few years earlier, where she was mesmerized by the castles and wanted to bring that same magic to her home as a reminder of the world&#x27;s beauty.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q82-temporal-">Q82 [temporal] <span style="color:#2ea043">✓</span><a href="#q82-temporal-" class="hash-link" aria-label="Direct link to q82-temporal-" title="Direct link to q82-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John receive a certificate for?</p>
+<p><strong>Expected:</strong> completion of a university degree</p>
+<p><strong>Hypothesis:</strong> John received a certificate of completion of his university degree, which he completed in late March 2023 (around 2023-03-26).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q83-temporal-">Q83 [temporal] <span style="color:#2ea043">✓</span><a href="#q83-temporal-" class="hash-link" aria-label="Direct link to q83-temporal-" title="Direct link to q83-temporal-">​</a></h3>
+<p><strong>Question:</strong> What areas is John particularly interested in for policymaking?</p>
+<p><strong>Expected:</strong> education and infrastructure</p>
+<p><strong>Hypothesis:</strong> Education and infrastructure. John told Maria on 2023-04-02 that &quot;improving education and infrastructure is particularly interesting to me,&quot; citing his community meeting involvement as having shown him the challenges these systems face and their impact on neighbors.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q84-temporal-">Q84 [temporal] <span style="color:#2ea043">✓</span><a href="#q84-temporal-" class="hash-link" aria-label="Direct link to q84-temporal-" title="Direct link to q84-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Maria participate in last weekend before April 10, 2023?</p>
+<p><strong>Expected:</strong> a 5K charity run</p>
+<p><strong>Hypothesis:</strong> Maria participated in a 5K charity run for a homeless shelter on 2023-04-02. She described it as &quot;awesome being surrounded by people all there for the same cause&quot; and called it &quot;truly rewarding,&quot; saying it reminded her why she&#x27;s passionate about charity work.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q85-temporal-">Q85 [temporal] <span style="color:#2ea043">✓</span><a href="#q85-temporal-" class="hash-link" aria-label="Direct link to q85-temporal-" title="Direct link to q85-temporal-">​</a></h3>
+<p><strong>Question:</strong> What event did John volunteer at last weekend?</p>
+<p><strong>Expected:</strong> career fair at a local school</p>
+<p><strong>Hypothesis:</strong> A career fair at a local school (on 2023-04-02).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q86-temporal-">Q86 [temporal] <span style="color:#2ea043">✓</span><a href="#q86-temporal-" class="hash-link" aria-label="Direct link to q86-temporal-" title="Direct link to q86-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John do that put a strain on his wallet?</p>
+<p><strong>Expected:</strong> His car broke down</p>
+<p><strong>Hypothesis:</strong> John&#x27;s car broke down on his way to work on Friday, 2023-04-07. Trying to get it fixed put a strain on his wallet.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q87-temporal-">Q87 [temporal] <span style="color:#2ea043">✓</span><a href="#q87-temporal-" class="hash-link" aria-label="Direct link to q87-temporal-" title="Direct link to q87-temporal-">​</a></h3>
+<p><strong>Question:</strong> Where did John explore on a road trip last year?</p>
+<p><strong>Expected:</strong> Pacific Northwest</p>
+<p><strong>Hypothesis:</strong> John explored the Pacific Northwest coast and visited some national parks on his family road trip.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q88-temporal-">Q88 [temporal] <span style="color:#2ea043">✓</span><a href="#q88-temporal-" class="hash-link" aria-label="Direct link to q88-temporal-" title="Direct link to q88-temporal-">​</a></h3>
+<p><strong>Question:</strong> What topic has John been blogging about recently?</p>
+<p><strong>Expected:</strong> politics and the government</p>
+<p><strong>Hypothesis:</strong> John has been blogging about politics and government, with his blog focused on education reform and infrastructure development.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q89-temporal-">Q89 [temporal] <span style="color:#2ea043">✓</span><a href="#q89-temporal-" class="hash-link" aria-label="Direct link to q89-temporal-" title="Direct link to q89-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why did John start blogging about politics and policies?</p>
+<p><strong>Expected:</strong> raise awareness and start conversations to create positive change</p>
+<p><strong>Hypothesis:</strong> John started blogging about politics and policies because he cares about making a real impact. His goal was to raise awareness and start conversations to create positive change — getting people involved by sharing ideas and taking action. He found it empowering to know he could help make a difference in people&#x27;s lives, and his motivation stemmed from seeing how lack of education and crumbling infrastructure had affected his own neighborhood growing up, not wanting future generations to go through the same.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q90-temporal-">Q90 [temporal] <span style="color:#2ea043">✓</span><a href="#q90-temporal-" class="hash-link" aria-label="Direct link to q90-temporal-" title="Direct link to q90-temporal-">​</a></h3>
+<p><strong>Question:</strong> What was the focus of John&#x27;s recent research and writing on his blog?</p>
+<p><strong>Expected:</strong> education reform and infrastructure development</p>
+<p><strong>Hypothesis:</strong> John&#x27;s recent research and writing on his blog focused on education reform and infrastructure development. He researches policies and writes about his thoughts and ideas, with the goal of raising awareness, starting conversations, and driving positive change.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q91-multi-hop-">Q91 [multi-hop] <span style="color:#2ea043">✓</span><a href="#q91-multi-hop-" class="hash-link" aria-label="Direct link to q91-multi-hop-" title="Direct link to q91-multi-hop-">​</a></h3>
+<p><strong>Question:</strong> What did John attend with his colleagues in March 2023?</p>
+<p><strong>Expected:</strong> a tech-for-good convention</p>
+<p><strong>Hypothesis:</strong> John attended a tech-for-good convention with his colleagues in March 2023 (around 2023-03-15). The colleagues were passionate about using technology for good in their community, and John described the energy as &quot;infectious,&quot; with attendees brainstorming ideas together — an experience that left him feeling renewed and inspired to make a bigger difference.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q92-temporal-">Q92 [temporal] <span style="color:#2ea043">✓</span><a href="#q92-temporal-" class="hash-link" aria-label="Direct link to q92-temporal-" title="Direct link to q92-temporal-">​</a></h3>
+<p><strong>Question:</strong> How often does John work out with his family?</p>
+<p><strong>Expected:</strong> Three times a week</p>
+<p><strong>Hypothesis:</strong> John attends boot camps with his family three times a week (started April 2023).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q93-temporal-">Q93 [temporal] <span style="color:#2ea043">✓</span><a href="#q93-temporal-" class="hash-link" aria-label="Direct link to q93-temporal-" title="Direct link to q93-temporal-">​</a></h3>
+<p><strong>Question:</strong> How has John&#x27;s fitness improved since starting boot camps with his family?</p>
+<p><strong>Expected:</strong> More energy, gains in strength and endurance</p>
+<p><strong>Hypothesis:</strong> John&#x27;s fitness has improved in several ways since starting family boot camps in April 2023:</p>
+<ul>
+<li><strong>More energy</strong> — He told Maria on 2023-05-04 they&#x27;ve &quot;had lots more energy.&quot;</li>
+<li><strong>Gains in strength and endurance</strong> — They&#x27;ve &quot;noticed some gains in strength and endurance.&quot;</li>
+<li><strong>Greater motivation</strong> — They&#x27;re &quot;pushing ourselves and supporting each other which is super motivating.&quot;</li>
+</ul>
+<p>The routine (three times a week) also brought broader benefits: his kids are getting excited about staying active, and the family cheers each other on during workouts and supports each other emotionally outside them.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q94-temporal-">Q94 [temporal] <span style="color:#2ea043">✓</span><a href="#q94-temporal-" class="hash-link" aria-label="Direct link to q94-temporal-" title="Direct link to q94-temporal-">​</a></h3>
+<p><strong>Question:</strong> What kind of food did Maria have on her dinner spread iwth her mother?</p>
+<p><strong>Expected:</strong> Salads, sandwiches, homemade desserts</p>
+<p><strong>Hypothesis:</strong> Salads, sandwiches, and homemade desserts.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q95-temporal-">Q95 [temporal] <span style="color:#2ea043">✓</span><a href="#q95-temporal-" class="hash-link" aria-label="Direct link to q95-temporal-" title="Direct link to q95-temporal-">​</a></h3>
+<p><strong>Question:</strong> What activity did Maria and her mom do together in May 2023?</p>
+<p><strong>Expected:</strong> Made dinner together</p>
+<p><strong>Hypothesis:</strong> Maria and her mom made dinner together on 2023-05-03 — a meal that included salads, sandwiches, and homemade desserts.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q96-temporal-">Q96 [temporal] <span style="color:#2ea043">✓</span><a href="#q96-temporal-" class="hash-link" aria-label="Direct link to q96-temporal-" title="Direct link to q96-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Maria do to feel closer to a community and her faith?</p>
+<p><strong>Expected:</strong> joined a nearby church</p>
+<p><strong>Hypothesis:</strong> Maria joined a nearby church on 2023-05-05 to feel closer to a community and her faith.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q97-temporal-">Q97 [temporal] <span style="color:#2ea043">✓</span><a href="#q97-temporal-" class="hash-link" aria-label="Direct link to q97-temporal-" title="Direct link to q97-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why did Maria join a nearby church recently?</p>
+<p><strong>Expected:</strong> to feel closer to a community and her faith</p>
+<p><strong>Hypothesis:</strong> Maria joined a nearby church on 2023-05-05 to feel closer to a community and her faith. She mentioned this in the context of recent charity work that left her feeling &quot;connected&quot; and &quot;fulfilled,&quot; and noted that life had been a bit rough lately, prompting her to take time to reflect and find balance.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q98-temporal-">Q98 [temporal] <span style="color:#2ea043">✓</span><a href="#q98-temporal-" class="hash-link" aria-label="Direct link to q98-temporal-" title="Direct link to q98-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John host for the veterans in May 2023 as part of the project?</p>
+<p><strong>Expected:</strong> a small party to share their stories</p>
+<p><strong>Hypothesis:</strong> John hosted a small party for veterans on 2023-05-19, inviting them to share their stories. The gathering helped the veterans make connections and find camaraderie.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q99-temporal-">Q99 [temporal] <span style="color:#2ea043">✓</span><a href="#q99-temporal-" class="hash-link" aria-label="Direct link to q99-temporal-" title="Direct link to q99-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John and the veterans do during the small party?</p>
+<p><strong>Expected:</strong> share stories and make connections</p>
+<p><strong>Hypothesis:</strong> During the small party (2023-05-19), John invited veterans to share their stories. They made connections and found camaraderie, with smiles and new friendships forming — John described it as heartwarming. A photo from the event showed a man shaking hands with a soldier in uniform.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q100-temporal-">Q100 [temporal] <span style="color:#2ea043">✓</span><a href="#q100-temporal-" class="hash-link" aria-label="Direct link to q100-temporal-" title="Direct link to q100-temporal-">​</a></h3>
+<p><strong>Question:</strong> What emotions did John feel during the small party with the veterans?</p>
+<p><strong>Expected:</strong> heartwarming</p>
+<p><strong>Hypothesis:</strong> John felt that the party was awesome and heartwarming. He enjoyed seeing the veterans make connections and find camaraderie, and the smiles and new friendships made it really heartwarming for him. The experience also reminded him of a sense of community and togetherness, and reinforced his feeling of how important it is to help veterans.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q101-temporal-">Q101 [temporal] <span style="color:#2ea043">✓</span><a href="#q101-temporal-" class="hash-link" aria-label="Direct link to q101-temporal-" title="Direct link to q101-temporal-">​</a></h3>
+<p><strong>Question:</strong> What event is Maria getting ready for at the shelter on May 25, 2023?</p>
+<p><strong>Expected:</strong> fundraiser</p>
+<p><strong>Hypothesis:</strong> A homeless shelter fundraiser featuring a chili cook-off (and a ring-toss tournament), scheduled for the following week (early June 2023), with the goal of raising enough to cover basic needs for the homeless.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q102-temporal-">Q102 [temporal] <span style="color:#2ea043">✓</span><a href="#q102-temporal-" class="hash-link" aria-label="Direct link to q102-temporal-" title="Direct link to q102-temporal-">​</a></h3>
+<p><strong>Question:</strong> What does Maria need to spread the word about for the fundraiser for the volunteer shelter?</p>
+<p><strong>Expected:</strong> chili cook-off</p>
+<p><strong>Hypothesis:</strong> The chili cook-off at the homeless shelter fundraiser. On 2023-05-25, Maria told John, &quot;We need to get the word out about the chili cook-off at the fundraiser,&quot; and shared the event poster.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q103-temporal-">Q103 [temporal] <span style="color:#2ea043">✓</span><a href="#q103-temporal-" class="hash-link" aria-label="Direct link to q103-temporal-" title="Direct link to q103-temporal-">​</a></h3>
+<p><strong>Question:</strong> What was the name of the pet that John had to say goodbye to on 3 June, 2023?</p>
+<p><strong>Expected:</strong> Max</p>
+<p><strong>Hypothesis:</strong> Max.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q104-temporal-">Q104 [temporal] <span style="color:#2ea043">✓</span><a href="#q104-temporal-" class="hash-link" aria-label="Direct link to q104-temporal-" title="Direct link to q104-temporal-">​</a></h3>
+<p><strong>Question:</strong> How long was Max a part of John&#x27;s family?</p>
+<p><strong>Expected:</strong> 10 years</p>
+<p><strong>Hypothesis:</strong> Max was a part of John&#x27;s family for 10 years.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q105-temporal-">Q105 [temporal] <span style="color:#2ea043">✓</span><a href="#q105-temporal-" class="hash-link" aria-label="Direct link to q105-temporal-" title="Direct link to q105-temporal-">​</a></h3>
+<p><strong>Question:</strong> How does John plan to honor the memories of his beloved pet?</p>
+<p><strong>Expected:</strong> By considering adopting a rescue dog</p>
+<p><strong>Hypothesis:</strong> John plans to honor Max&#x27;s memory by adopting a rescue dog. After Max — his family dog of 10 years — passed away in mid-2023, John told Maria on 2023-06-03: &quot;We&#x27;re considering adopting a rescue dog — for love and to teach our kids responsibility and compassion.&quot; He framed this as carrying forward what Max taught the family: &quot;He really taught us the importance of unconditional love and loyalty. I want my kids to learn that too. Our bond with him was so special and something I cherish.&quot;</p>
+<p>He reaffirmed the plan on 2023-08-13, telling Maria he would &quot;look into shelters near me soon.&quot; Alongside the adoption plan, John keeps Max&#x27;s memory alive by cherishing a photo of him sitting peacefully in the grass with a leash (&quot;that&#x27;s how we&#x27;ll think of him — peaceful and happy&quot;) and by reminiscing — for example, sharing another memorial photo of Max with Maria on 2023-08-11 and saying he is &quot;always still thinking about Max.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q106-temporal-">Q106 [temporal] <span style="color:#2ea043">✓</span><a href="#q106-temporal-" class="hash-link" aria-label="Direct link to q106-temporal-" title="Direct link to q106-temporal-">​</a></h3>
+<p><strong>Question:</strong> What important values does John want to teach his kids through adopting a rescue dog?</p>
+<p><strong>Expected:</strong> Responsibility and compassion</p>
+<p><strong>Hypothesis:</strong> Responsibility and compassion.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q107-temporal-">Q107 [temporal] <span style="color:#2ea043">✓</span><a href="#q107-temporal-" class="hash-link" aria-label="Direct link to q107-temporal-" title="Direct link to q107-temporal-">​</a></h3>
+<p><strong>Question:</strong> What new activity did Maria start recently, as mentioned on 3 June, 2023?</p>
+<p><strong>Expected:</strong> volunteering at a local dog shelter once a month</p>
+<p><strong>Hypothesis:</strong> Maria recently started volunteering at a local dog shelter once a month, which she mentioned to John on 2023-06-03 in the context of offering to help when his family adopts a rescue dog.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q108-temporal-">Q108 [temporal] <span style="color:#2ea043">✓</span><a href="#q108-temporal-" class="hash-link" aria-label="Direct link to q108-temporal-" title="Direct link to q108-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Maria say it was like being at the waterfall in Oregon?</p>
+<p><strong>Expected:</strong> Like being in a fairy tale</p>
+<p><strong>Hypothesis:</strong> Maria said hiking to the top and seeing the waterfall was &quot;awesome&quot; and &quot;breath-taking.&quot; She described feeling &quot;like I was in a fairy tale! The water sounded so calming and the surroundings were beautiful. It was truly magical!&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q109-temporal-">Q109 [temporal] <span style="color:#2ea043">✓</span><a href="#q109-temporal-" class="hash-link" aria-label="Direct link to q109-temporal-" title="Direct link to q109-temporal-">​</a></h3>
+<p><strong>Question:</strong> What does Maria say she feels when doing upside-down yoga poses?</p>
+<p><strong>Expected:</strong> Free and light</p>
+<p><strong>Hypothesis:</strong> Maria says the upside-down poses (inversions) in aerial yoga make her feel free and light.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q110-temporal-">Q110 [temporal] <span style="color:#2ea043">✓</span><a href="#q110-temporal-" class="hash-link" aria-label="Direct link to q110-temporal-" title="Direct link to q110-temporal-">​</a></h3>
+<p><strong>Question:</strong> What exciting news did Maria share on 16 June, 2023?</p>
+<p><strong>Expected:</strong> joined a gym</p>
+<p><strong>Hypothesis:</strong> On 2023-06-16, Maria shared that she had joined a gym the previous week. She told John it had been &quot;super positive&quot; — she was sticking to her workout routine, the people were awesome, and the atmosphere was very welcoming. She also mentioned she wanted to get stronger, improve her endurance, and was trying kundalini yoga.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q111-temporal-">Q111 [temporal] <span style="color:#2ea043">✓</span><a href="#q111-temporal-" class="hash-link" aria-label="Direct link to q111-temporal-" title="Direct link to q111-temporal-">​</a></h3>
+<p><strong>Question:</strong> What yoga activity has Maria been trying to improve her strength and endurance?</p>
+<p><strong>Expected:</strong> kundalini yoga</p>
+<p><strong>Hypothesis:</strong> Kundalini yoga. Maria told John on 2023-06-16 that she was trying kundalini yoga in the context of wanting to get stronger and improve her endurance, having recently joined a gym.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q112-temporal-">Q112 [temporal] <span style="color:#2ea043">✓</span><a href="#q112-temporal-" class="hash-link" aria-label="Direct link to q112-temporal-" title="Direct link to q112-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John recently get promoted to?</p>
+<p><strong>Expected:</strong> assistant manager</p>
+<p><strong>Hypothesis:</strong> John was promoted to assistant manager (announced on 2023-06-16).</p>
+<p><strong>Raw:</strong> Y</p>
+<p><em>(Note: original run had an empty hypothesis — re-ran on a fresh agent invocation.)</em></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q113-temporal-">Q113 [temporal] <span style="color:#2ea043">✓</span><a href="#q113-temporal-" class="hash-link" aria-label="Direct link to q113-temporal-" title="Direct link to q113-temporal-">​</a></h3>
+<p><strong>Question:</strong> What was one of the biggest challenges John faced in his journey to becoming assistant manager?</p>
+<p><strong>Expected:</strong> self-doubt</p>
+<p><strong>Hypothesis:</strong> One of the biggest challenges John faced on his journey to becoming assistant manager was self-doubt. He told Maria on 2023-06-16 that he faced hurdles including tech stuff and workplace stuff, &quot;but the worst was self-doubt. There were moments when I questioned if I was on the right track. But with support at home and my own grit, I powered through.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q114-temporal-">Q114 [temporal] <span style="color:#2ea043">✓</span><a href="#q114-temporal-" class="hash-link" aria-label="Direct link to q114-temporal-" title="Direct link to q114-temporal-">​</a></h3>
+<p><strong>Question:</strong> How does John describe the support he received during his journey to becoming assistant manager?</p>
+<p><strong>Expected:</strong> having support at home and his own grit</p>
+<p><strong>Hypothesis:</strong> When John shared news of his promotion on 2023-06-16, he described his support as coming primarily from his family at home. He told Maria: &quot;Support from loved ones is vital. With their trust, we can do anything! I&#x27;m really lucky to have my family on this journey with me.&quot; He credited &quot;support at home and my own grit&quot; for powering him through hurdles like tech challenges, workplace issues, and especially self-doubt.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q115-temporal-">Q115 [temporal] <span style="color:#2ea043">✓</span><a href="#q115-temporal-" class="hash-link" aria-label="Direct link to q115-temporal-" title="Direct link to q115-temporal-">​</a></h3>
+<p><strong>Question:</strong> What kind of event did John and his family attend in June 2023?</p>
+<p><strong>Expected:</strong> live music event</p>
+<p><strong>Hypothesis:</strong> John and his family attended a live music event around 2023-06-20, where they had a blast dancing together and enjoyed the crowd&#x27;s energy.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q116-temporal-">Q116 [temporal] <span style="color:#2ea043">✓</span><a href="#q116-temporal-" class="hash-link" aria-label="Direct link to q116-temporal-" title="Direct link to q116-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why did Maria need to help her cousin find a new place to live?</p>
+<p><strong>Expected:</strong> Her cousin had to leave and find a new place in a hurry.</p>
+<p><strong>Hypothesis:</strong> Maria&#x27;s cousin had a tough time and had to leave her home in a hurry, which forced an unexpected move. Maria stepped in to help her find a new place during this stressful transition (told to John on 2023-07-03). The graph doesn&#x27;t specify what caused the cousin&#x27;s tough situation.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q117-temporal-">Q117 [temporal] <span style="color:#2ea043">✓</span><a href="#q117-temporal-" class="hash-link" aria-label="Direct link to q117-temporal-" title="Direct link to q117-temporal-">​</a></h3>
+<p><strong>Question:</strong> What event did John participate in to show support for veterans&#x27; rights?</p>
+<p><strong>Expected:</strong> marching event</p>
+<p><strong>Hypothesis:</strong> John participated in a march for veterans&#x27; rights (~2023-07-02) to show his support.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q118-temporal-">Q118 [temporal] <span style="color:#2ea043">✓</span><a href="#q118-temporal-" class="hash-link" aria-label="Direct link to q118-temporal-" title="Direct link to q118-temporal-">​</a></h3>
+<p><strong>Question:</strong> What inspired John to join the marching event for veterans&#x27; rights?</p>
+<p><strong>Expected:</strong> Respect for the military and the desire to show support</p>
+<p><strong>Hypothesis:</strong> John was inspired to join the marching event for veterans&#x27; rights by his long-standing passion for veterans and his belief in standing up for what he believes in. He told Maria, &quot;I&#x27;ve always had a great respect for our military and wanted to show my support. I think it&#x27;s important to stand up for what we believe in.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q119-temporal-">Q119 [temporal] <span style="color:#2ea043">✓</span><a href="#q119-temporal-" class="hash-link" aria-label="Direct link to q119-temporal-" title="Direct link to q119-temporal-">​</a></h3>
+<p><strong>Question:</strong> How often does John get to see sunsets like the one he shared with Maria?</p>
+<p><strong>Expected:</strong> At least once a week</p>
+<p><strong>Hypothesis:</strong> John told Maria he sees ocean sunsets like that one <strong>at least once a week</strong> on his walks, describing them as a good way to disconnect, think, and find peace.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q120-temporal-">Q120 [temporal] <span style="color:#2ea043">✓</span><a href="#q120-temporal-" class="hash-link" aria-label="Direct link to q120-temporal-" title="Direct link to q120-temporal-">​</a></h3>
+<p><strong>Question:</strong> What natural disaster affected John&#x27;s old area on 7 July, 2023?</p>
+<p><strong>Expected:</strong> Flood</p>
+<p><strong>Hypothesis:</strong> A flood hit West County, John&#x27;s old area, in late June/early July 2023, destroying many homes due to poor infrastructure.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q121-temporal-">Q121 [temporal] <span style="color:#2ea043">✓</span><a href="#q121-temporal-" class="hash-link" aria-label="Direct link to q121-temporal-" title="Direct link to q121-temporal-">​</a></h3>
+<p><strong>Question:</strong> How did the flood impact the homes in John&#x27;s old area?</p>
+<p><strong>Expected:</strong> Lots of homes were ruined.</p>
+<p><strong>Hypothesis:</strong> The flood hit West County (John&#x27;s old area) around late June/early July 2023, and because the infrastructure there was poor, lots of homes were ruined.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q122-temporal-">Q122 [temporal] <span style="color:#2ea043">✓</span><a href="#q122-temporal-" class="hash-link" aria-label="Direct link to q122-temporal-" title="Direct link to q122-temporal-">​</a></h3>
+<p><strong>Question:</strong> What motivated Maria and John to discuss potential solutions for their community on 7 July, 2023?</p>
+<p><strong>Expected:</strong> Flood in John&#x27;s old area</p>
+<p><strong>Hypothesis:</strong> A flood hit John&#x27;s old area, West County, in late June/early July 2023 (~2023-07-01). The infrastructure was poor, so many homes were ruined. This reminded John that they needed to fix things up in their community, motivating him to organize a meeting and tell Maria on 2023-07-07: &quot;I&#x27;m getting people together to chat about this and discuss potential solutions.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q123-temporal-">Q123 [temporal] <span style="color:#2ea043">✓</span><a href="#q123-temporal-" class="hash-link" aria-label="Direct link to q123-temporal-" title="Direct link to q123-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did Maria plan to do later on the evening of 7 July, 2023?</p>
+<p><strong>Expected:</strong> have dinner with friends from the gym</p>
+<p><strong>Hypothesis:</strong> Maria planned to have dinner with friends from the gym.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q124-temporal-">Q124 [temporal] <span style="color:#2ea043">✓</span><a href="#q124-temporal-" class="hash-link" aria-label="Direct link to q124-temporal-" title="Direct link to q124-temporal-">​</a></h3>
+<p><strong>Question:</strong> What kind of activities did Maria do at the picnic with her church friends?</p>
+<p><strong>Expected:</strong> played games like charades and a scavenger hunt</p>
+<p><strong>Hypothesis:</strong> At the picnic with her church friends (~2023-07-15), Maria chilled under the trees, played games (charades and a scavenger hunt), and ate food. They all had a good laugh.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q125-temporal-">Q125 [temporal] <span style="color:#2ea043">✓</span><a href="#q125-temporal-" class="hash-link" aria-label="Direct link to q125-temporal-" title="Direct link to q125-temporal-">​</a></h3>
+<p><strong>Question:</strong> What does John appreciate about the veteran&#x27;s hospital visit?</p>
+<p><strong>Expected:</strong> the resilience of the veterans and their inspiring stories</p>
+<p><strong>Hypothesis:</strong> John described the veterans hospital visit as &quot;really eye-opening&quot; and said it &quot;made me appreciate what we have and the need to give back.&quot; He also valued meeting elderly veteran Samuel, whose stories he found &quot;inspiring and heartbreaking&quot; — seeing the veterans&#x27; resilience filled him with hope and reminded him why he wanted to join the military.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q126-temporal-">Q126 [temporal] <span style="color:#2ea043">✓</span><a href="#q126-temporal-" class="hash-link" aria-label="Direct link to q126-temporal-" title="Direct link to q126-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John take away from visiting the veteran&#x27;s hospital?</p>
+<p><strong>Expected:</strong> appreciation for giving back</p>
+<p><strong>Hypothesis:</strong> John described the visit as &quot;really eye-opening.&quot; His takeaways included:</p>
+<ul>
+<li><strong>Inspiration and heartbreak</strong> from elderly veteran Samuel&#x27;s stories</li>
+<li><strong>Hope</strong>, drawn from witnessing the veterans&#x27; resilience</li>
+<li>A reminder of <strong>why he wanted to join the military</strong></li>
+<li>A deeper <strong>appreciation for what he has and the need to give back</strong></li>
+<li>A reinforced sense that his veterans support organization is like &quot;a family — always supporting each other&quot;</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q127-temporal-">Q127 [temporal] <span style="color:#2ea043">✓</span><a href="#q127-temporal-" class="hash-link" aria-label="Direct link to q127-temporal-" title="Direct link to q127-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why did John feel inspired to join the military after the visit to the hospital?</p>
+<p><strong>Expected:</strong> seeing the resilience of the veterans</p>
+<p><strong>Hypothesis:</strong> Meeting elderly veteran Samuel and hearing his &quot;inspiring and heartbreaking&quot; stories, along with seeing the veterans&#x27; resilience, filled John with hope and reminded him why he wanted to join the military. The visit was &quot;really eye-opening&quot; and made him appreciate what he had and the need to give back.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q128-temporal-">Q128 [temporal] <span style="color:#2ea043">✓</span><a href="#q128-temporal-" class="hash-link" aria-label="Direct link to q128-temporal-" title="Direct link to q128-temporal-">​</a></h3>
+<p><strong>Question:</strong> In what activity did Maria and her church friends participate in July 2023?</p>
+<p><strong>Expected:</strong> hiking</p>
+<p><strong>Hypothesis:</strong> In July 2023, Maria and her church friends went on a hike. (Maria shared a hiking trail photo with John from this hike on 2023-07-22.)</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q129-temporal-">Q129 [temporal] <span style="color:#2ea043">✓</span><a href="#q129-temporal-" class="hash-link" aria-label="Direct link to q129-temporal-" title="Direct link to q129-temporal-">​</a></h3>
+<p><strong>Question:</strong> What does John think about trying new classes at the yoga studio?</p>
+<p><strong>Expected:</strong> Trying new classes is a fun way to switch up the exercise routine.</p>
+<p><strong>Hypothesis:</strong> John thinks the variety of classes at his yoga studio (yoga, kickboxing, and circuit training) &quot;keeps things interesting.&quot; He attends the studio often and appreciates that it offers a bunch of different class options.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q130-temporal-">Q130 [temporal] <span style="color:#2ea043">✓</span><a href="#q130-temporal-" class="hash-link" aria-label="Direct link to q130-temporal-" title="Direct link to q130-temporal-">​</a></h3>
+<p><strong>Question:</strong> Which activity has John done apart from yoga at the studio?</p>
+<p><strong>Expected:</strong> weight training</p>
+<p><strong>Hypothesis:</strong> Weight training. John told Maria on 2023-07-22 that he had also done weight training at the studio, describing it as &quot;challenging but peaceful, kinda like yoga.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q131-temporal-">Q131 [temporal] <span style="color:#2ea043">✓</span><a href="#q131-temporal-" class="hash-link" aria-label="Direct link to q131-temporal-" title="Direct link to q131-temporal-">​</a></h3>
+<p><strong>Question:</strong> What community service did Maria mention that she was involved in on 31 July, 2023?</p>
+<p><strong>Expected:</strong> volunteered at a homeless shelter</p>
+<p><strong>Hypothesis:</strong> On 31 July 2023, Maria mentioned her volunteer work at the homeless shelter — specifically, she told John that the previous week she had dropped off baked goods she had made at the homeless shelter, saying &quot;It was great and I&#x27;m more motivated than ever to help people.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q132-temporal-">Q132 [temporal] <span style="color:#2ea043">✓</span><a href="#q132-temporal-" class="hash-link" aria-label="Direct link to q132-temporal-" title="Direct link to q132-temporal-">​</a></h3>
+<p><strong>Question:</strong> How did Maria start volunteering at the homeless shelter?</p>
+<p><strong>Expected:</strong> Witnessed a family struggling on the streets and reached out to the shelter</p>
+<p><strong>Hypothesis:</strong> Maria started volunteering at the homeless shelter around August 2022 after witnessing a family struggling on the streets. The sight motivated her to help, so she proactively reached out to the shelter herself and asked if they needed any volunteers. They said yes, and she has been volunteering there since.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q133-temporal-">Q133 [temporal] <span style="color:#2ea043">✓</span><a href="#q133-temporal-" class="hash-link" aria-label="Direct link to q133-temporal-" title="Direct link to q133-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John do the week before August 3, 2023 involving his kids?</p>
+<p><strong>Expected:</strong> Had a meaningful experience at a military memorial</p>
+<p><strong>Hypothesis:</strong> The week before August 3, 2023 (~July 27, 2023), John took his family to a military memorial. He shared a photo of a young boy holding a flag in a cemetery, and told Maria the kids &quot;were awestruck and humbled.&quot; John framed it as a deliberate teaching moment, saying it was important to show them &quot;how to respect and appreciate those who served our country.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q134-temporal-">Q134 [temporal] <span style="color:#2ea043">✓</span><a href="#q134-temporal-" class="hash-link" aria-label="Direct link to q134-temporal-" title="Direct link to q134-temporal-">​</a></h3>
+<p><strong>Question:</strong> How did John describe his kids&#x27; reaction at the military memorial?</p>
+<p><strong>Expected:</strong> awestruck and humbled</p>
+<p><strong>Hypothesis:</strong> John described his kids as &quot;awestruck and humbled&quot; at the military memorial.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q135-temporal-">Q135 [temporal] <span style="color:#2ea043">✓</span><a href="#q135-temporal-" class="hash-link" aria-label="Direct link to q135-temporal-" title="Direct link to q135-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why does Maria think it&#x27;s important for younger generations to visit military memorials?</p>
+<p><strong>Expected:</strong> To remember and appreciate those who served</p>
+<p><strong>Hypothesis:</strong> Maria thinks it&#x27;s important for younger generations to visit military memorials so they can remember and appreciate those who served. She told John, &quot;It&#x27;s important for younger generations to remember and appreciate those who served,&quot; and added that &quot;it&#x27;s super important to teach kids about veterans and what they did for us.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q136-temporal-">Q136 [temporal] <span style="color:#2ea043">✓</span><a href="#q136-temporal-" class="hash-link" aria-label="Direct link to q136-temporal-" title="Direct link to q136-temporal-">​</a></h3>
+<p><strong>Question:</strong> What does John believe is important for children regarding veterans?</p>
+<p><strong>Expected:</strong> Teaching them to respect and appreciate those who served</p>
+<p><strong>Hypothesis:</strong> John believes it&#x27;s important to teach kids to respect and appreciate those who served in the military. After taking his kids to a military memorial (~2023-07-27), he told Maria: &quot;Showing them how to respect and appreciate those who served our country is important,&quot; framing the visit as a deliberate teaching moment about military service and sacrifice.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q137-temporal-">Q137 [temporal] <span style="color:#2ea043">✓</span><a href="#q137-temporal-" class="hash-link" aria-label="Direct link to q137-temporal-" title="Direct link to q137-temporal-">​</a></h3>
+<p><strong>Question:</strong> What happened to John&#x27;s job in August 2023?</p>
+<p><strong>Expected:</strong> John lost his job at the mechanical engineering company.</p>
+<p><strong>Hypothesis:</strong> In August 2023, John lost his job when his mechanical engineering company tanked. He told Maria on 2023-08-05 that the layoff was unexpected and tough (&quot;Never saw this coming&quot;). This was the same company where he had been promoted to assistant manager just two months earlier (2023-06-16). Following the layoff, he began exploring tech industry opportunities and mentioned he may have found a potential role at a tech company that needed his mechanical skills for their hardware team.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q138-temporal-">Q138 [temporal] <span style="color:#2ea043">✓</span><a href="#q138-temporal-" class="hash-link" aria-label="Direct link to q138-temporal-" title="Direct link to q138-temporal-">​</a></h3>
+<p><strong>Question:</strong> What activity did Maria take up with her friends from church in August 2023?</p>
+<p><strong>Expected:</strong> community work</p>
+<p><strong>Hypothesis:</strong> Maria took up community work with her friends from church. On 2023-08-04, she did community work with them and described it to John the next day as &quot;super rewarding,&quot; tying it to the importance of kindness and compassion.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q139-temporal-">Q139 [temporal] <span style="color:#2ea043">✓</span><a href="#q139-temporal-" class="hash-link" aria-label="Direct link to q139-temporal-" title="Direct link to q139-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did John do to help his community last year in his hometown?</p>
+<p><strong>Expected:</strong> Helped renovate a rundown community center.</p>
+<p><strong>Hypothesis:</strong> Last year (around 2022), John helped renovate a rundown community center back in his hometown. He described it as a lot of work but said it was rewarding to see everyone come together, and the center has since been busy serving the community.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q140-temporal-">Q140 [temporal] <span style="color:#2ea043">✓</span><a href="#q140-temporal-" class="hash-link" aria-label="Direct link to q140-temporal-" title="Direct link to q140-temporal-">​</a></h3>
+<p><strong>Question:</strong> What cause did the 5K charity run organized by John support?</p>
+<p><strong>Expected:</strong> veterans and their families</p>
+<p><strong>Hypothesis:</strong> Veterans and their families.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q141-temporal-">Q141 [temporal] <span style="color:#2ea043">✓</span><a href="#q141-temporal-" class="hash-link" aria-label="Direct link to q141-temporal-" title="Direct link to q141-temporal-">​</a></h3>
+<p><strong>Question:</strong> Who did John work with to raise awareness and funds for victims of domestic abuse?</p>
+<p><strong>Expected:</strong> a local organization</p>
+<p><strong>Hypothesis:</strong> John worked with a local domestic abuse advocacy organization to raise awareness and funds for victims of domestic abuse.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q142-temporal-">Q142 [temporal] <span style="color:#2ea043">✓</span><a href="#q142-temporal-" class="hash-link" aria-label="Direct link to q142-temporal-" title="Direct link to q142-temporal-">​</a></h3>
+<p><strong>Question:</strong> What recognition did Maria receive at the homeless shelter in August 2023?</p>
+<p><strong>Expected:</strong> a medal for volunteering</p>
+<p><strong>Hypothesis:</strong> Maria received a medal at the homeless shelter for her volunteer work around 2023-08-04. She described the experience as &quot;humbling.&quot; This was the first formal recognition (medal) she had received for her shelter work, complementing earlier compliments from fellow volunteers and thank-you letters from residents.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q143-temporal-">Q143 [temporal] <span style="color:#2ea043">✓</span><a href="#q143-temporal-" class="hash-link" aria-label="Direct link to q143-temporal-" title="Direct link to q143-temporal-">​</a></h3>
+<p><strong>Question:</strong> What is the name of Maria&#x27;s puppy she got two weeks before August 11, 2023?</p>
+<p><strong>Expected:</strong> Coco</p>
+<p><strong>Hypothesis:</strong> Coco</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q144-temporal-">Q144 [temporal] <span style="color:#2ea043">✓</span><a href="#q144-temporal-" class="hash-link" aria-label="Direct link to q144-temporal-" title="Direct link to q144-temporal-">​</a></h3>
+<p><strong>Question:</strong> What activity did John and Max enjoy together last summer?</p>
+<p><strong>Expected:</strong> Camping</p>
+<p><strong>Hypothesis:</strong> John and Max went on a camping trip together in summer 2022 — they hiked, swam, and made memories around the campfire and at their tent in the woods.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q145-temporal-">Q145 [temporal] <span style="color:#2ea043">✓</span><a href="#q145-temporal-" class="hash-link" aria-label="Direct link to q145-temporal-" title="Direct link to q145-temporal-">​</a></h3>
+<p><strong>Question:</strong> How does John describe the camping trip with Max?</p>
+<p><strong>Expected:</strong> Peaceful and awesome</p>
+<p><strong>Hypothesis:</strong> John described the camping trip with Max (summer 2022) as &quot;a blast&quot; — they hiked, swam, and made great memories. He called it &quot;a really peaceful and awesome experience&quot; and &quot;so chill,&quot; saying being out in nature, away from all the noise, was &quot;a nice break from the everyday hustle and bustle.&quot; He shared a campfire photo of himself with Max and a photo of a tent in the woods with a blue tarp, naming it his best memory with Max.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q146-temporal-">Q146 [temporal] <span style="color:#2ea043">✓</span><a href="#q146-temporal-" class="hash-link" aria-label="Direct link to q146-temporal-" title="Direct link to q146-temporal-">​</a></h3>
+<p><strong>Question:</strong> Why does John say he feels stuck and questioning his decisions and goals?</p>
+<p><strong>Expected:</strong> Not feeling like making much of an impact</p>
+<p><strong>Hypothesis:</strong> John says he feels stuck and is questioning his decisions and goals because he doesn&#x27;t feel like he&#x27;s making much of an impact. On 2023-08-11, he told Maria: &quot;Lately, I&#x27;ve been stumped about something. Don&#x27;t feel like I&#x27;m making much of an impact here, which has me questioning my decisions and goals.&quot; He elaborated that he wants to positively affect people and the world but feels stuck, and needs to find a better way to focus his passion and enthusiasm. This came up during a reflection on a tougher recent stretch in his life.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q147-temporal-">Q147 [temporal] <span style="color:#2ea043">✓</span><a href="#q147-temporal-" class="hash-link" aria-label="Direct link to q147-temporal-" title="Direct link to q147-temporal-">​</a></h3>
+<p><strong>Question:</strong> What is the name of Maria&#x27;s second puppy?</p>
+<p><strong>Expected:</strong> Shadow</p>
+<p><strong>Hypothesis:</strong> Shadow.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q148-temporal-">Q148 [temporal] <span style="color:#2ea043">✓</span><a href="#q148-temporal-" class="hash-link" aria-label="Direct link to q148-temporal-" title="Direct link to q148-temporal-">​</a></h3>
+<p><strong>Question:</strong> How is Maria&#x27;s new puppy adjusting to its new home?</p>
+<p><strong>Expected:</strong> doing great - learning commands and house training</p>
+<p><strong>Hypothesis:</strong> Maria&#x27;s newest puppy, Shadow (a black female adopted from a shelter around 2023-08-06), is adjusting well to her new home. As of 2023-08-13, Maria reported that Shadow is:</p>
+<ul>
+<li><strong>Doing great</strong> — learning commands and house training quickly</li>
+<li><strong>Full of energy</strong> and always puts a smile on Maria&#x27;s face</li>
+<li><strong>Getting along great</strong> with Coco, Maria&#x27;s other (white) puppy adopted late July 2023</li>
+<li>Bringing <strong>so much joy</strong> — Maria said she feels blessed to be able to give her a loving home</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q149-temporal-">Q149 [temporal] <span style="color:#2ea043">✓</span><a href="#q149-temporal-" class="hash-link" aria-label="Direct link to q149-temporal-" title="Direct link to q149-temporal-">​</a></h3>
+<p><strong>Question:</strong> What is John currently doing as a volunteer in August 2023?</p>
+<p><strong>Expected:</strong> mentoring students at a local school</p>
+<p><strong>Hypothesis:</strong> John volunteers as a mentor at a local school (as of August 2023). He told Maria on 2023-08-13: &quot;I&#x27;m volunteering as a mentor for a local school. It&#x27;s really rewarding to see how much I can help these students.&quot;</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q150-temporal-">Q150 [temporal] <span style="color:#2ea043">✓</span><a href="#q150-temporal-" class="hash-link" aria-label="Direct link to q150-temporal-" title="Direct link to q150-temporal-">​</a></h3>
+<p><strong>Question:</strong> What activities does John&#x27;s family enjoy doing together?</p>
+<p><strong>Expected:</strong> going for hikes, hanging out at the park, having picnics, playing board games, having movie nights</p>
+<p><strong>Hypothesis:</strong> John&#x27;s family enjoys a wide range of activities together:</p>
+<ul>
+<li><strong>Outdoor activities</strong>: hiking, hanging out at parks, and having picnics</li>
+<li><strong>Indoor activities</strong>: playing board games and having movie nights at home</li>
+<li><strong>Playgrounds</strong>: climbing, sliding, and playing games</li>
+<li><strong>Boot camps</strong>: attending fitness boot camps three times a week (started April 2023) for bonding and getting fit</li>
+<li><strong>Making pizzas together</strong>: picking out toppings and sharing the meal</li>
+<li><strong>Live music events</strong>: dancing together and enjoying the crowd energy</li>
+<li><strong>Town events</strong>: walks, picnics, and concerts (e.g., a violin concert John found)</li>
+<li><strong>Arts and crafts / family games</strong>: planned activities inspired by community events</li>
+</ul>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q151-temporal-">Q151 [temporal] <span style="color:#2ea043">✓</span><a href="#q151-temporal-" class="hash-link" aria-label="Direct link to q151-temporal-" title="Direct link to q151-temporal-">​</a></h3>
+<p><strong>Question:</strong> What did the donations help John&#x27;s community acquire on 16 August, 2023?</p>
+<p><strong>Expected:</strong> a brand new fire truck</p>
+<p><strong>Hypothesis:</strong> A brand new fire truck for John&#x27;s fire-fighting brigade.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q154-adversarial-">Q154 [adversarial] <span style="color:#2ea043">✓</span><a href="#q154-adversarial-" class="hash-link" aria-label="Direct link to q154-adversarial-" title="Direct link to q154-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Who inspired John to start volunteering?</p>
+<p><strong>Expected:</strong> His aunt</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q155-adversarial-">Q155 [adversarial] <span style="color:#2ea043">✓</span><a href="#q155-adversarial-" class="hash-link" aria-label="Direct link to q155-adversarial-" title="Direct link to q155-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Why did Maria decide to run for office again?</p>
+<p><strong>Expected:</strong> saw the impact she could make in the community through politics</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The memory graph shows that John (not Maria) decided to run for office again — Maria was the person John told about his decision and who supported him.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q157-adversarial-">Q157 [adversarial] <span style="color:#2ea043">✓</span><a href="#q157-adversarial-" class="hash-link" aria-label="Direct link to q157-adversarial-" title="Direct link to q157-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What is the name of Maria&#x27;s one-year-old child?</p>
+<p><strong>Expected:</strong> Kyle</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q160-adversarial-">Q160 [adversarial] <span style="color:#2ea043">✓</span><a href="#q160-adversarial-" class="hash-link" aria-label="Direct link to q160-adversarial-" title="Direct link to q160-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Where did John get the idea for the castle shadow box in his home?</p>
+<p><strong>Expected:</strong> England</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p>(The graph indicates the castle shadow box belongs to Maria, not John — she made it inspired by her trip to London — so I can&#x27;t attribute it to John.)</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q162-adversarial-">Q162 [adversarial] <span style="color:#2ea043">✓</span><a href="#q162-adversarial-" class="hash-link" aria-label="Direct link to q162-adversarial-" title="Direct link to q162-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What areas is John particularly interested in for art appreciation?</p>
+<p><strong>Expected:</strong> education and infrastructure</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q165-adversarial-">Q165 [adversarial] <span style="color:#2ea043">✓</span><a href="#q165-adversarial-" class="hash-link" aria-label="Direct link to q165-adversarial-" title="Direct link to q165-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How often does Maria work out with her family?</p>
+<p><strong>Expected:</strong> Three times a week</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q166-adversarial-">Q166 [adversarial] <span style="color:#2ea043">✓</span><a href="#q166-adversarial-" class="hash-link" aria-label="Direct link to q166-adversarial-" title="Direct link to q166-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How has John&#x27;s artistic skills improved since starting boot camps with his family?</p>
+<p><strong>Expected:</strong> More energy, gains in strength and endurance</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q167-adversarial-">Q167 [adversarial] <span style="color:#2ea043">✓</span><a href="#q167-adversarial-" class="hash-link" aria-label="Direct link to q167-adversarial-" title="Direct link to q167-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What kind of food did Maria have on her dinner spread with her father?</p>
+<p><strong>Expected:</strong> Salads, sandwiches, homemade desserts</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q168-adversarial-">Q168 [adversarial] <span style="color:#2ea043">✓</span><a href="#q168-adversarial-" class="hash-link" aria-label="Direct link to q168-adversarial-" title="Direct link to q168-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What did John do to feel closer to a community and his faith?</p>
+<p><strong>Expected:</strong> joined a nearby church</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows that joining a nearby church to feel closer to a community and faith was something Maria did (on 2023-05-05), not John.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q169-adversarial-">Q169 [adversarial] <span style="color:#2ea043">✓</span><a href="#q169-adversarial-" class="hash-link" aria-label="Direct link to q169-adversarial-" title="Direct link to q169-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Why did John join a nearby church recently?</p>
+<p><strong>Expected:</strong> to feel closer to a community and her faith</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q170-adversarial-">Q170 [adversarial] <span style="color:#2ea043">✓</span><a href="#q170-adversarial-" class="hash-link" aria-label="Direct link to q170-adversarial-" title="Direct link to q170-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How long was Max a part of Maria&#x27;s family?</p>
+<p><strong>Expected:</strong> 10 years</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. According to the graph, Max was John&#x27;s family dog (for 10 years), not Maria&#x27;s. Maria did not have any pets growing up — her own pets are Coco (adopted late July 2023) and Shadow (adopted early August 2023).</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q171-adversarial-">Q171 [adversarial] <span style="color:#2ea043">✓</span><a href="#q171-adversarial-" class="hash-link" aria-label="Direct link to q171-adversarial-" title="Direct link to q171-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How does Maria plan to honor the memories of her beloved pet?</p>
+<p><strong>Expected:</strong> By considering adopting a rescue dog</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows Maria&#x27;s pets (Coco and Shadow, both adopted in 2023) are her first pets and are alive — there&#x27;s no record of a deceased pet of Maria&#x27;s or plans by her to honor one. The deceased pet Max and plans to honor his memory belong to John, not Maria.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q172-adversarial-">Q172 [adversarial] <span style="color:#2ea043">✓</span><a href="#q172-adversarial-" class="hash-link" aria-label="Direct link to q172-adversarial-" title="Direct link to q172-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What important values does Maria want to teach her kids through adopting a rescue dog?</p>
+<p><strong>Expected:</strong> Responsibility and compassion</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q173-adversarial-">Q173 [adversarial] <span style="color:#2ea043">✓</span><a href="#q173-adversarial-" class="hash-link" aria-label="Direct link to q173-adversarial-" title="Direct link to q173-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What did Maria say it was like being at the desert in Oregon?</p>
+<p><strong>Expected:</strong> Like being in a fairy tale</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q175-adversarial-">Q175 [adversarial] <span style="color:#2ea043">✓</span><a href="#q175-adversarial-" class="hash-link" aria-label="Direct link to q175-adversarial-" title="Direct link to q175-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What did Maria recently get promoted to?</p>
+<p><strong>Expected:</strong> assistant manager</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q176-adversarial-">Q176 [adversarial] <span style="color:#2ea043">✓</span><a href="#q176-adversarial-" class="hash-link" aria-label="Direct link to q176-adversarial-" title="Direct link to q176-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What was one of the biggest challenges Maria faced in her journey to becoming assistant manager?</p>
+<p><strong>Expected:</strong> self-doubt</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q177-adversarial-">Q177 [adversarial] <span style="color:#2ea043">✓</span><a href="#q177-adversarial-" class="hash-link" aria-label="Direct link to q177-adversarial-" title="Direct link to q177-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Why did John need to help his cousin find a new place to live?</p>
+<p><strong>Expected:</strong> His cousin had to leave and find a new place in a hurry.</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q178-adversarial-">Q178 [adversarial] <span style="color:#2ea043">✓</span><a href="#q178-adversarial-" class="hash-link" aria-label="Direct link to q178-adversarial-" title="Direct link to q178-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What event did Maria participate in to show support for veterans&#x27; rights?</p>
+<p><strong>Expected:</strong> marching event</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows John (not Maria) participated in a march for veterans&#x27; rights (~2023-07-02). Maria verbally committed to help John with his veterans support project on 2023-05-20, but I don&#x27;t see a record of Maria personally participating in a specific event for veterans&#x27; rights.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q179-adversarial-">Q179 [adversarial] <span style="color:#2ea043">✓</span><a href="#q179-adversarial-" class="hash-link" aria-label="Direct link to q179-adversarial-" title="Direct link to q179-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How did the drought impact the homes in John&#x27;s old area?</p>
+<p><strong>Expected:</strong> Lots of homes were ruined.</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q180-adversarial-">Q180 [adversarial] <span style="color:#2ea043">✓</span><a href="#q180-adversarial-" class="hash-link" aria-label="Direct link to q180-adversarial-" title="Direct link to q180-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What does John criticize about the veteran&#x27;s hospital visit?</p>
+<p><strong>Expected:</strong> the resilience of the veterans and their inspiring stories</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The memory graph shows John described the veterans hospital visit positively — calling it &quot;eye-opening,&quot; meeting &quot;amazing people,&quot; and finding the veteran Samuel&#x27;s stories &quot;inspiring&quot; — with no record of any criticism from John about the visit.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q181-adversarial-">Q181 [adversarial] <span style="color:#2ea043">✓</span><a href="#q181-adversarial-" class="hash-link" aria-label="Direct link to q181-adversarial-" title="Direct link to q181-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What did John take away from visiting the orphanage?</p>
+<p><strong>Expected:</strong> appreciation for giving back</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q182-adversarial-">Q182 [adversarial] <span style="color:#2ea043">✓</span><a href="#q182-adversarial-" class="hash-link" aria-label="Direct link to q182-adversarial-" title="Direct link to q182-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Why did Maria feel inspired to join the military after the visit to the hospital?</p>
+<p><strong>Expected:</strong> seeing the resilience of the veterans</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q183-adversarial-">Q183 [adversarial] <span style="color:#2ea043">✓</span><a href="#q183-adversarial-" class="hash-link" aria-label="Direct link to q183-adversarial-" title="Direct link to q183-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How did Maria describe her kids&#x27; reaction at the military memorial?</p>
+<p><strong>Expected:</strong> awestruck and humbled</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. According to the graph, it was John&#x27;s kids (not Maria&#x27;s) who visited a military memorial around 2023-07-27, and John — not Maria — described them as &quot;awestruck and humbled.&quot; There&#x27;s no record of Maria describing her own kids&#x27; reaction at a military memorial.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q184-adversarial-">Q184 [adversarial] <span style="color:#2ea043">✓</span><a href="#q184-adversarial-" class="hash-link" aria-label="Direct link to q184-adversarial-" title="Direct link to q184-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Why does Maria think it&#x27;s important for younger generations to visit art galleries?</p>
+<p><strong>Expected:</strong> To remember and appreciate those who served</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q185-adversarial-">Q185 [adversarial] <span style="color:#2ea043">✓</span><a href="#q185-adversarial-" class="hash-link" aria-label="Direct link to q185-adversarial-" title="Direct link to q185-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What happened to Maria&#x27;s job in August 2023?</p>
+<p><strong>Expected:</strong> John lost his job at the mechanical engineering company.</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q186-adversarial-">Q186 [adversarial] <span style="color:#2ea043">✓</span><a href="#q186-adversarial-" class="hash-link" aria-label="Direct link to q186-adversarial-" title="Direct link to q186-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What cause did the 5K charity run organized by Maria support?</p>
+<p><strong>Expected:</strong> veterans and their families</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q187-adversarial-">Q187 [adversarial] <span style="color:#2ea043">✓</span><a href="#q187-adversarial-" class="hash-link" aria-label="Direct link to q187-adversarial-" title="Direct link to q187-adversarial-">​</a></h3>
+<p><strong>Question:</strong> Who did John work with to raise awareness and funds for animal welfare?</p>
+<p><strong>Expected:</strong> a local organization</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q188-adversarial-">Q188 [adversarial] <span style="color:#2ea043">✓</span><a href="#q188-adversarial-" class="hash-link" aria-label="Direct link to q188-adversarial-" title="Direct link to q188-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What recognition did John receive at the homeless shelter in August 2023?</p>
+<p><strong>Expected:</strong> a medal for volunteering</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows that Maria (not John) received a medal recognizing her homeless shelter volunteer work in August 2023. John&#x27;s homeless shelter activity in the records was in December 2022 with his online service group, with no recognition mentioned.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q189-adversarial-">Q189 [adversarial] <span style="color:#2ea043">✓</span><a href="#q189-adversarial-" class="hash-link" aria-label="Direct link to q189-adversarial-" title="Direct link to q189-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What is the name of John&#x27;s puppy he got two weeks before August 11, 2023?</p>
+<p><strong>Expected:</strong> Coco</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. The graph shows that the puppy adopted two weeks before August 11, 2023 (named Coco) belonged to Maria, not John. As of mid-August 2023, John&#x27;s family was still planning to adopt a rescue dog but had not yet done so.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q190-adversarial-">Q190 [adversarial] <span style="color:#b58900">↑</span><a href="#q190-adversarial-" class="hash-link" aria-label="Direct link to q190-adversarial-" title="Direct link to q190-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How does Maria describe the camping trip with Max?</p>
+<p><strong>Expected:</strong> Peaceful and awesome</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> X | <strong>Rescored:</strong> Y</p>
+<p><strong>Rescore reason:</strong> Source (session 30): John (not Maria) camped with his dog Max and described it as &quot;peaceful and awesome.&quot; The question&#x27;s premise (Maria-with-Max camping) is false — Maria camped with church friends (session 18), never with Max. Adversarial; agent&#x27;s abstain is the correct response (R1, correct N4-style adversarial handling).</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q191-adversarial-">Q191 [adversarial] <span style="color:#2ea043">✓</span><a href="#q191-adversarial-" class="hash-link" aria-label="Direct link to q191-adversarial-" title="Direct link to q191-adversarial-">​</a></h3>
+<p><strong>Question:</strong> What is the name of Maria&#x27;s second kitten?</p>
+<p><strong>Expected:</strong> Shadow</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="q192-adversarial-">Q192 [adversarial] <span style="color:#2ea043">✓</span><a href="#q192-adversarial-" class="hash-link" aria-label="Direct link to q192-adversarial-" title="Direct link to q192-adversarial-">​</a></h3>
+<p><strong>Question:</strong> How is John&#x27;s new puppy adjusting to its new home?</p>
+<p><strong>Expected:</strong> doing great - learning commands and house training</p>
+<p><strong>Hypothesis:</strong> I don&#x27;t have enough information. According to the graph, John does not have a new puppy. As of mid-August 2023, John&#x27;s family was still only considering/planning to adopt a rescue dog (two months after their dog Max passed). The new puppies in the graph — Coco (white, adopted late July 2023) and Shadow (black, adopted early August 2023) — belong to Maria, not John.</p>
+<p><strong>Raw:</strong> Y</p>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://linkedin.ghe.com/mirarto-atelier/open-morpheus/edit/docs/benchmark/conv-41-results.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/open-morpheus/docs/benchmark/conv-30-results"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Conv-30: Jon &amp; Gina</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/open-morpheus/docs/benchmark/conv-42-results"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Conv-42: Joanna &amp; Nate</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#all-questions-and-answers" class="table-of-contents__link toc-highlight">All Questions and Answers</a><ul><li><a href="#q0-multi-hop-" class="table-of-contents__link toc-highlight">Q0 [multi-hop] <span>✓</span></a></li><li><a href="#q1-multi-hop-" class="table-of-contents__link toc-highlight">Q1 [multi-hop] <span>✓</span></a></li><li><a href="#q2-single-hop-" class="table-of-contents__link toc-highlight">Q2 [single-hop] <span>✓</span></a></li><li><a href="#q3-single-hop-" class="table-of-contents__link toc-highlight">Q3 [single-hop] <span>✗</span></a></li><li><a href="#q4-multi-hop-" class="table-of-contents__link toc-highlight">Q4 [multi-hop] <span>✓</span></a></li><li><a href="#q5-multi-hop-" class="table-of-contents__link toc-highlight">Q5 [multi-hop] <span>↑</span></a></li><li><a href="#q6-single-hop-" class="table-of-contents__link toc-highlight">Q6 [single-hop] <span>✓</span></a></li><li><a href="#q7-single-hop-" class="table-of-contents__link toc-highlight">Q7 [single-hop] <span>✓</span></a></li><li><a href="#q8-open-domain-" class="table-of-contents__link toc-highlight">Q8 [open-domain] <span>✗</span></a></li><li><a href="#q9-single-hop-" class="table-of-contents__link toc-highlight">Q9 [single-hop] <span>✓</span></a></li><li><a href="#q10-multi-hop-" class="table-of-contents__link toc-highlight">Q10 [multi-hop] <span>✓</span></a></li><li><a href="#q11-single-hop-" class="table-of-contents__link toc-highlight">Q11 [single-hop] <span>✗</span></a></li><li><a href="#q12-single-hop-" class="table-of-contents__link toc-highlight">Q12 [single-hop] <span>✓</span></a></li><li><a href="#q13-multi-hop-" class="table-of-contents__link toc-highlight">Q13 [multi-hop] <span>✓</span></a></li><li><a href="#q14-open-domain-" class="table-of-contents__link toc-highlight">Q14 [open-domain] <span>✓</span></a></li><li><a href="#q15-single-hop-" class="table-of-contents__link toc-highlight">Q15 [single-hop] <span>✓</span></a></li><li><a href="#q16-multi-hop-" class="table-of-contents__link toc-highlight">Q16 [multi-hop] <span>✓</span></a></li><li><a href="#q17-open-domain-" class="table-of-contents__link toc-highlight">Q17 [open-domain] <span>✗</span></a></li><li><a href="#q18-single-hop-" class="table-of-contents__link toc-highlight">Q18 [single-hop] <span>✓</span></a></li><li><a href="#q19-single-hop-" class="table-of-contents__link toc-highlight">Q19 [single-hop] <span>✓</span></a></li><li><a href="#q20-multi-hop-" class="table-of-contents__link toc-highlight">Q20 [multi-hop] <span>✓</span></a></li><li><a href="#q21-single-hop-" class="table-of-contents__link toc-highlight">Q21 [single-hop] <span>✗</span></a></li><li><a href="#q22-multi-hop-" class="table-of-contents__link toc-highlight">Q22 [multi-hop] <span>✓</span></a></li><li><a href="#q23-single-hop-" class="table-of-contents__link toc-highlight">Q23 [single-hop] <span>✗</span></a></li><li><a href="#q24-multi-hop-" class="table-of-contents__link toc-highlight">Q24 [multi-hop] <span>✓</span></a></li><li><a href="#q25-single-hop-" class="table-of-contents__link toc-highlight">Q25 [single-hop] <span>✓</span></a></li><li><a href="#q26-single-hop-" class="table-of-contents__link toc-highlight">Q26 [single-hop] <span>✓</span></a></li><li><a href="#q27-multi-hop-" class="table-of-contents__link toc-highlight">Q27 [multi-hop] <span>✓</span></a></li><li><a href="#q28-single-hop-" class="table-of-contents__link toc-highlight">Q28 [single-hop] <span>✓</span></a></li><li><a href="#q29-single-hop-" class="table-of-contents__link toc-highlight">Q29 [single-hop] <span>✓</span></a></li><li><a href="#q30-single-hop-" class="table-of-contents__link toc-highlight">Q30 [single-hop] <span>✓</span></a></li><li><a href="#q31-multi-hop-" class="table-of-contents__link toc-highlight">Q31 [multi-hop] <span>✓</span></a></li><li><a href="#q32-single-hop-" class="table-of-contents__link toc-highlight">Q32 [single-hop] <span>✓</span></a></li><li><a href="#q33-single-hop-" class="table-of-contents__link toc-highlight">Q33 [single-hop] <span>✓</span></a></li><li><a href="#q34-multi-hop-" class="table-of-contents__link toc-highlight">Q34 [multi-hop] <span>✓</span></a></li><li><a href="#q35-single-hop-" class="table-of-contents__link toc-highlight">Q35 [single-hop] <span>✓</span></a></li><li><a href="#q36-single-hop-" class="table-of-contents__link toc-highlight">Q36 [single-hop] <span>✓</span></a></li><li><a href="#q37-single-hop-" class="table-of-contents__link toc-highlight">Q37 [single-hop] <span>✓</span></a></li><li><a href="#q38-multi-hop-" class="table-of-contents__link toc-highlight">Q38 [multi-hop] <span>✓</span></a></li><li><a href="#q39-open-domain-" class="table-of-contents__link toc-highlight">Q39 [open-domain] <span>✓</span></a></li><li><a href="#q40-single-hop-" class="table-of-contents__link toc-highlight">Q40 [single-hop] <span>✓</span></a></li><li><a href="#q41-open-domain-" class="table-of-contents__link toc-highlight">Q41 [open-domain] <span>✓</span></a></li><li><a href="#q42-single-hop-" class="table-of-contents__link toc-highlight">Q42 [single-hop] <span>✓</span></a></li><li><a href="#q43-multi-hop-" class="table-of-contents__link toc-highlight">Q43 [multi-hop] <span>✓</span></a></li><li><a href="#q44-single-hop-" class="table-of-contents__link toc-highlight">Q44 [single-hop] <span>✓</span></a></li><li><a href="#q45-open-domain-" class="table-of-contents__link toc-highlight">Q45 [open-domain] <span>↑</span></a></li><li><a href="#q46-multi-hop-" class="table-of-contents__link toc-highlight">Q46 [multi-hop] <span>✓</span></a></li><li><a href="#q47-single-hop-" class="table-of-contents__link toc-highlight">Q47 [single-hop] <span>✗</span></a></li><li><a href="#q48-multi-hop-" class="table-of-contents__link toc-highlight">Q48 [multi-hop] <span>↑</span></a></li><li><a href="#q49-single-hop-" class="table-of-contents__link toc-highlight">Q49 [single-hop] <span>↑</span></a></li><li><a href="#q50-open-domain-" class="table-of-contents__link toc-highlight">Q50 [open-domain] <span>✗</span></a></li><li><a href="#q51-multi-hop-" class="table-of-contents__link toc-highlight">Q51 [multi-hop] <span>✓</span></a></li><li><a href="#q52-single-hop-" class="table-of-contents__link toc-highlight">Q52 [single-hop] <span>✓</span></a></li><li><a href="#q53-multi-hop-" class="table-of-contents__link toc-highlight">Q53 [multi-hop] <span>✓</span></a></li><li><a href="#q54-multi-hop-" class="table-of-contents__link toc-highlight">Q54 [multi-hop] <span>✓</span></a></li><li><a href="#q55-multi-hop-" class="table-of-contents__link toc-highlight">Q55 [multi-hop] <span>✓</span></a></li><li><a href="#q56-multi-hop-" class="table-of-contents__link toc-highlight">Q56 [multi-hop] <span>✓</span></a></li><li><a href="#q57-single-hop-" class="table-of-contents__link toc-highlight">Q57 [single-hop] <span>✓</span></a></li><li><a href="#q58-multi-hop-" class="table-of-contents__link toc-highlight">Q58 [multi-hop] <span>✓</span></a></li><li><a href="#q59-multi-hop-" class="table-of-contents__link toc-highlight">Q59 [multi-hop] <span>✓</span></a></li><li><a href="#q60-single-hop-" class="table-of-contents__link toc-highlight">Q60 [single-hop] <span>✓</span></a></li><li><a href="#q61-multi-hop-" class="table-of-contents__link toc-highlight">Q61 [multi-hop] <span>✓</span></a></li><li><a href="#q62-single-hop-" class="table-of-contents__link toc-highlight">Q62 [single-hop] <span>✓</span></a></li><li><a href="#q63-multi-hop-" class="table-of-contents__link toc-highlight">Q63 [multi-hop] <span>↑</span></a></li><li><a href="#q64-open-domain-" class="table-of-contents__link toc-highlight">Q64 [open-domain] <span>✓</span></a></li><li><a href="#q65-temporal-" class="table-of-contents__link toc-highlight">Q65 [temporal] <span>✓</span></a></li><li><a href="#q66-temporal-" class="table-of-contents__link toc-highlight">Q66 [temporal] <span>✓</span></a></li><li><a href="#q67-temporal-" class="table-of-contents__link toc-highlight">Q67 [temporal] <span>✓</span></a></li><li><a href="#q68-temporal-" class="table-of-contents__link toc-highlight">Q68 [temporal] <span>✗</span></a></li><li><a href="#q69-temporal-" class="table-of-contents__link toc-highlight">Q69 [temporal] <span>↑</span></a></li><li><a href="#q70-temporal-" class="table-of-contents__link toc-highlight">Q70 [temporal] <span>✓</span></a></li><li><a href="#q71-temporal-" class="table-of-contents__link toc-highlight">Q71 [temporal] <span>✓</span></a></li><li><a href="#q72-temporal-" class="table-of-contents__link toc-highlight">Q72 [temporal] <span>✓</span></a></li><li><a href="#q73-temporal-" class="table-of-contents__link toc-highlight">Q73 [temporal] <span>✓</span></a></li><li><a href="#q74-temporal-" class="table-of-contents__link toc-highlight">Q74 [temporal] <span>✓</span></a></li><li><a href="#q75-temporal-" class="table-of-contents__link toc-highlight">Q75 [temporal] <span>✓</span></a></li><li><a href="#q76-temporal-" class="table-of-contents__link toc-highlight">Q76 [temporal] <span>✓</span></a></li><li><a href="#q77-temporal-" class="table-of-contents__link toc-highlight">Q77 [temporal] <span>✓</span></a></li><li><a href="#q78-temporal-" class="table-of-contents__link toc-highlight">Q78 [temporal] <span>✓</span></a></li><li><a href="#q79-temporal-" class="table-of-contents__link toc-highlight">Q79 [temporal] <span>↑</span></a></li><li><a href="#q80-temporal-" class="table-of-contents__link toc-highlight">Q80 [temporal] <span>✓</span></a></li><li><a href="#q81-temporal-" class="table-of-contents__link toc-highlight">Q81 [temporal] <span>✓</span></a></li><li><a href="#q82-temporal-" class="table-of-contents__link toc-highlight">Q82 [temporal] <span>✓</span></a></li><li><a href="#q83-temporal-" class="table-of-contents__link toc-highlight">Q83 [temporal] <span>✓</span></a></li><li><a href="#q84-temporal-" class="table-of-contents__link toc-highlight">Q84 [temporal] <span>✓</span></a></li><li><a href="#q85-temporal-" class="table-of-contents__link toc-highlight">Q85 [temporal] <span>✓</span></a></li><li><a href="#q86-temporal-" class="table-of-contents__link toc-highlight">Q86 [temporal] <span>✓</span></a></li><li><a href="#q87-temporal-" class="table-of-contents__link toc-highlight">Q87 [temporal] <span>✓</span></a></li><li><a href="#q88-temporal-" class="table-of-contents__link toc-highlight">Q88 [temporal] <span>✓</span></a></li><li><a href="#q89-temporal-" class="table-of-contents__link toc-highlight">Q89 [temporal] <span>✓</span></a></li><li><a href="#q90-temporal-" class="table-of-contents__link toc-highlight">Q90 [temporal] <span>✓</span></a></li><li><a href="#q91-multi-hop-" class="table-of-contents__link toc-highlight">Q91 [multi-hop] <span>✓</span></a></li><li><a href="#q92-temporal-" class="table-of-contents__link toc-highlight">Q92 [temporal] <span>✓</span></a></li><li><a href="#q93-temporal-" class="table-of-contents__link toc-highlight">Q93 [temporal] <span>✓</span></a></li><li><a href="#q94-temporal-" class="table-of-contents__link toc-highlight">Q94 [temporal] <span>✓</span></a></li><li><a href="#q95-temporal-" class="table-of-contents__link toc-highlight">Q95 [temporal] <span>✓</span></a></li><li><a href="#q96-temporal-" class="table-of-contents__link toc-highlight">Q96 [temporal] <span>✓</span></a></li><li><a href="#q97-temporal-" class="table-of-contents__link toc-highlight">Q97 [temporal] <span>✓</span></a></li><li><a href="#q98-temporal-" class="table-of-contents__link toc-highlight">Q98 [temporal] <span>✓</span></a></li><li><a href="#q99-temporal-" class="table-of-contents__link toc-highlight">Q99 [temporal] <span>✓</span></a></li><li><a href="#q100-temporal-" class="table-of-contents__link toc-highlight">Q100 [temporal] <span>✓</span></a></li><li><a href="#q101-temporal-" class="table-of-contents__link toc-highlight">Q101 [temporal] <span>✓</span></a></li><li><a href="#q102-temporal-" class="table-of-contents__link toc-highlight">Q102 [temporal] <span>✓</span></a></li><li><a href="#q103-temporal-" class="table-of-contents__link toc-highlight">Q103 [temporal] <span>✓</span></a></li><li><a href="#q104-temporal-" class="table-of-contents__link toc-highlight">Q104 [temporal] <span>✓</span></a></li><li><a href="#q105-temporal-" class="table-of-contents__link toc-highlight">Q105 [temporal] <span>✓</span></a></li><li><a href="#q106-temporal-" class="table-of-contents__link toc-highlight">Q106 [temporal] <span>✓</span></a></li><li><a href="#q107-temporal-" class="table-of-contents__link toc-highlight">Q107 [temporal] <span>✓</span></a></li><li><a href="#q108-temporal-" class="table-of-contents__link toc-highlight">Q108 [temporal] <span>✓</span></a></li><li><a href="#q109-temporal-" class="table-of-contents__link toc-highlight">Q109 [temporal] <span>✓</span></a></li><li><a href="#q110-temporal-" class="table-of-contents__link toc-highlight">Q110 [temporal] <span>✓</span></a></li><li><a href="#q111-temporal-" class="table-of-contents__link toc-highlight">Q111 [temporal] <span>✓</span></a></li><li><a href="#q112-temporal-" class="table-of-contents__link toc-highlight">Q112 [temporal] <span>✓</span></a></li><li><a href="#q113-temporal-" class="table-of-contents__link toc-highlight">Q113 [temporal] <span>✓</span></a></li><li><a href="#q114-temporal-" class="table-of-contents__link toc-highlight">Q114 [temporal] <span>✓</span></a></li><li><a href="#q115-temporal-" class="table-of-contents__link toc-highlight">Q115 [temporal] <span>✓</span></a></li><li><a href="#q116-temporal-" class="table-of-contents__link toc-highlight">Q116 [temporal] <span>✓</span></a></li><li><a href="#q117-temporal-" class="table-of-contents__link toc-highlight">Q117 [temporal] <span>✓</span></a></li><li><a href="#q118-temporal-" class="table-of-contents__link toc-highlight">Q118 [temporal] <span>✓</span></a></li><li><a href="#q119-temporal-" class="table-of-contents__link toc-highlight">Q119 [temporal] <span>✓</span></a></li><li><a href="#q120-temporal-" class="table-of-contents__link toc-highlight">Q120 [temporal] <span>✓</span></a></li><li><a href="#q121-temporal-" class="table-of-contents__link toc-highlight">Q121 [temporal] <span>✓</span></a></li><li><a href="#q122-temporal-" class="table-of-contents__link toc-highlight">Q122 [temporal] <span>✓</span></a></li><li><a href="#q123-temporal-" class="table-of-contents__link toc-highlight">Q123 [temporal] <span>✓</span></a></li><li><a href="#q124-temporal-" class="table-of-contents__link toc-highlight">Q124 [temporal] <span>✓</span></a></li><li><a href="#q125-temporal-" class="table-of-contents__link toc-highlight">Q125 [temporal] <span>✓</span></a></li><li><a href="#q126-temporal-" class="table-of-contents__link toc-highlight">Q126 [temporal] <span>✓</span></a></li><li><a href="#q127-temporal-" class="table-of-contents__link toc-highlight">Q127 [temporal] <span>✓</span></a></li><li><a href="#q128-temporal-" class="table-of-contents__link toc-highlight">Q128 [temporal] <span>✓</span></a></li><li><a href="#q129-temporal-" class="table-of-contents__link toc-highlight">Q129 [temporal] <span>✓</span></a></li><li><a href="#q130-temporal-" class="table-of-contents__link toc-highlight">Q130 [temporal] <span>✓</span></a></li><li><a href="#q131-temporal-" class="table-of-contents__link toc-highlight">Q131 [temporal] <span>✓</span></a></li><li><a href="#q132-temporal-" class="table-of-contents__link toc-highlight">Q132 [temporal] <span>✓</span></a></li><li><a href="#q133-temporal-" class="table-of-contents__link toc-highlight">Q133 [temporal] <span>✓</span></a></li><li><a href="#q134-temporal-" class="table-of-contents__link toc-highlight">Q134 [temporal] <span>✓</span></a></li><li><a href="#q135-temporal-" class="table-of-contents__link toc-highlight">Q135 [temporal] <span>✓</span></a></li><li><a href="#q136-temporal-" class="table-of-contents__link toc-highlight">Q136 [temporal] <span>✓</span></a></li><li><a href="#q137-temporal-" class="table-of-contents__link toc-highlight">Q137 [temporal] <span>✓</span></a></li><li><a href="#q138-temporal-" class="table-of-contents__link toc-highlight">Q138 [temporal] <span>✓</span></a></li><li><a href="#q139-temporal-" class="table-of-contents__link toc-highlight">Q139 [temporal] <span>✓</span></a></li><li><a href="#q140-temporal-" class="table-of-contents__link toc-highlight">Q140 [temporal] <span>✓</span></a></li><li><a href="#q141-temporal-" class="table-of-contents__link toc-highlight">Q141 [temporal] <span>✓</span></a></li><li><a href="#q142-temporal-" class="table-of-contents__link toc-highlight">Q142 [temporal] <span>✓</span></a></li><li><a href="#q143-temporal-" class="table-of-contents__link toc-highlight">Q143 [temporal] <span>✓</span></a></li><li><a href="#q144-temporal-" class="table-of-contents__link toc-highlight">Q144 [temporal] <span>✓</span></a></li><li><a href="#q145-temporal-" class="table-of-contents__link toc-highlight">Q145 [temporal] <span>✓</span></a></li><li><a href="#q146-temporal-" class="table-of-contents__link toc-highlight">Q146 [temporal] <span>✓</span></a></li><li><a href="#q147-temporal-" class="table-of-contents__link toc-highlight">Q147 [temporal] <span>✓</span></a></li><li><a href="#q148-temporal-" class="table-of-contents__link toc-highlight">Q148 [temporal] <span>✓</span></a></li><li><a href="#q149-temporal-" class="table-of-contents__link toc-highlight">Q149 [temporal] <span>✓</span></a></li><li><a href="#q150-temporal-" class="table-of-contents__link toc-highlight">Q150 [temporal] <span>✓</span></a></li><li><a href="#q151-temporal-" class="table-of-contents__link toc-highlight">Q151 [temporal] <span>✓</span></a></li><li><a href="#q154-adversarial-" class="table-of-contents__link toc-highlight">Q154 [adversarial] <span>✓</span></a></li><li><a href="#q155-adversarial-" class="table-of-contents__link toc-highlight">Q155 [adversarial] <span>✓</span></a></li><li><a href="#q157-adversarial-" class="table-of-contents__link toc-highlight">Q157 [adversarial] <span>✓</span></a></li><li><a href="#q160-adversarial-" class="table-of-contents__link toc-highlight">Q160 [adversarial] <span>✓</span></a></li><li><a href="#q162-adversarial-" class="table-of-contents__link toc-highlight">Q162 [adversarial] <span>✓</span></a></li><li><a href="#q165-adversarial-" class="table-of-contents__link toc-highlight">Q165 [adversarial] <span>✓</span></a></li><li><a href="#q166-adversarial-" class="table-of-contents__link toc-highlight">Q166 [adversarial] <span>✓</span></a></li><li><a href="#q167-adversarial-" class="table-of-contents__link toc-highlight">Q167 [adversarial] <span>✓</span></a></li><li><a href="#q168-adversarial-" class="table-of-contents__link toc-highlight">Q168 [adversarial] <span>✓</span></a></li><li><a href="#q169-adversarial-" class="table-of-contents__link toc-highlight">Q169 [adversarial] <span>✓</span></a></li><li><a href="#q170-adversarial-" class="table-of-contents__link toc-highlight">Q170 [adversarial] <span>✓</span></a></li><li><a href="#q171-adversarial-" class="table-of-contents__link toc-highlight">Q171 [adversarial] <span>✓</span></a></li><li><a href="#q172-adversarial-" class="table-of-contents__link toc-highlight">Q172 [adversarial] <span>✓</span></a></li><li><a href="#q173-adversarial-" class="table-of-contents__link toc-highlight">Q173 [adversarial] <span>✓</span></a></li><li><a href="#q175-adversarial-" class="table-of-contents__link toc-highlight">Q175 [adversarial] <span>✓</span></a></li><li><a href="#q176-adversarial-" class="table-of-contents__link toc-highlight">Q176 [adversarial] <span>✓</span></a></li><li><a href="#q177-adversarial-" class="table-of-contents__link toc-highlight">Q177 [adversarial] <span>✓</span></a></li><li><a href="#q178-adversarial-" class="table-of-contents__link toc-highlight">Q178 [adversarial] <span>✓</span></a></li><li><a href="#q179-adversarial-" class="table-of-contents__link toc-highlight">Q179 [adversarial] <span>✓</span></a></li><li><a href="#q180-adversarial-" class="table-of-contents__link toc-highlight">Q180 [adversarial] <span>✓</span></a></li><li><a href="#q181-adversarial-" class="table-of-contents__link toc-highlight">Q181 [adversarial] <span>✓</span></a></li><li><a href="#q182-adversarial-" class="table-of-contents__link toc-highlight">Q182 [adversarial] <span>✓</span></a></li><li><a href="#q183-adversarial-" class="table-of-contents__link toc-highlight">Q183 [adversarial] <span>✓</span></a></li><li><a href="#q184-adversarial-" class="table-of-contents__link toc-highlight">Q184 [adversarial] <span>✓</span></a></li><li><a href="#q185-adversarial-" class="table-of-contents__link toc-highlight">Q185 [adversarial] <span>✓</span></a></li><li><a href="#q186-adversarial-" class="table-of-contents__link toc-highlight">Q186 [adversarial] <span>✓</span></a></li><li><a href="#q187-adversarial-" class="table-of-contents__link toc-highlight">Q187 [adversarial] <span>✓</span></a></li><li><a href="#q188-adversarial-" class="table-of-contents__link toc-highlight">Q188 [adversarial] <span>✓</span></a></li><li><a href="#q189-adversarial-" class="table-of-contents__link toc-highlight">Q189 [adversarial] <span>✓</span></a></li><li><a href="#q190-adversarial-" class="table-of-contents__link toc-highlight">Q190 [adversarial] <span>↑</span></a></li><li><a href="#q191-adversarial-" class="table-of-contents__link toc-highlight">Q191 [adversarial] <span>✓</span></a></li><li><a href="#q192-adversarial-" class="table-of-contents__link toc-highlight">Q192 [adversarial] <span>✓</span></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Morpheus benchmark archive. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

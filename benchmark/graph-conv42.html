@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morpheus Memory Graph — Conv-42 (Joanna & Nate)</title>
+<script src="https://unpkg.com/cytoscape@3/dist/cytoscape.min.js"></script>
+<script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>
+<script src="https://unpkg.com/cytoscape-dagre@2/cytoscape-dagre.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, sans-serif; background: #002b36; color: #839496; }
+  .header { padding: 12px 20px; border-bottom: 1px solid #073642; display: flex; align-items: center; gap: 12px; }
+  .header h1 { color: #eee8d5; font-size: 16px; }
+  .header .stats { font-size: 11px; opacity: 0.5; }
+  .container { display: flex; height: calc(100vh - 48px); }
+  #cy { flex: 1; }
+  .sidebar { width: 320px; border-left: 1px solid #073642; overflow-y: auto; padding: 14px; font-size: 12px; }
+  .sidebar h3 { color: #eee8d5; font-size: 13px; margin-bottom: 8px; }
+  .badge { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
+  .node-header { color: #eee8d5; font-size: 13px; margin-bottom: 6px; }
+  .node-body { color: #839496; white-space: pre-wrap; margin-top: 8px; padding-top: 8px; border-top: 1px solid #073642; font-size: 11px; line-height: 1.5; }
+  .node-id { font-size: 10px; opacity: 0.3; font-family: monospace; margin-top: 8px; }
+  .node-lineage { font-size: 10px; opacity: 0.5; margin-bottom: 8px; }
+  .legend { padding: 14px; border-top: 1px solid #073642; }
+  .legend h4 { font-size: 11px; color: #eee8d5; margin-bottom: 6px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; }
+  .legend-item .swatch { width: 16px; height: 2px; border-radius: 1px; }
+  .legend-item span { font-size: 10px; opacity: 0.5; }
+  .controls { padding: 10px 20px; border-bottom: 1px solid #073642; display: flex; gap: 8px; align-items: center; }
+  .controls button, .controls select { background: #073642; color: #93a1a1; border: 1px solid #586e75; padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; }
+  .controls button:hover { background: #586e75; color: #eee8d5; }
+  .controls button.active { background: #268bd2; color: #fdf6e3; border-color: #268bd2; }
+  .controls input { background: #073642; color: #eee8d5; border: 1px solid #586e75; padding: 4px 8px; border-radius: 4px; font-size: 11px; width: 200px; }
+  .branch-dim { opacity: 0.06 !important; }
+  .branch-sat { opacity: 0.7 !important; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Morpheus Memory Graph</h1>
+  <span class="stats">Conv-42: Joanna & Nate — 29 sessions, 629 turns</span>
+  <span class="stats" id="graph-stats"></span>
+</div>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search nodes..." oninput="searchNodes(this.value)">
+  <button onclick="resetView()">Reset</button>
+  <span style="opacity:0.3;margin:0 4px">|</span>
+  <button id="btn-cluster" class="active" onclick="setLayout('cluster')">Cluster</button>
+  <button id="btn-tree" onclick="setLayout('tree')">Tree</button>
+  <span style="opacity:0.3;margin:0 4px">|</span>
+  <button id="btn-all" class="active" onclick="focusBranch('all')">All</button>
+  <button id="btn-semantic" onclick="focusBranch('semantic')">Semantic</button>
+  <button id="btn-episodic" onclick="focusBranch('episodic')">Episodic</button>
+  <button id="btn-procedural" onclick="focusBranch('procedural')">Procedural</button>
+</div>
+
+<div class="container">
+  <div id="cy"></div>
+  <div class="sidebar">
+    <div id="node-detail">
+      <p style="opacity:0.3;">Click a node to see details</p>
+    </div>
+    <div class="legend">
+      <h4>Branches</h4>
+      <div class="legend-item"><div class="swatch" style="background:#268bd2;height:4px;width:12px;border-radius:2px"></div><span>semantic</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#2aa198;height:4px;width:12px;border-radius:2px"></div><span>episodic</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#b58900;height:4px;width:12px;border-radius:2px"></div><span>procedural</span></div>
+      <h4 style="margin-top:10px">Link Types</h4>
+      <div class="legend-item"><div class="swatch" style="background:#586e75"></div><span>child</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#b58900"></div><span>instance_of</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#2aa198"></div><span>involves</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#268bd2"></div><span>learned_from</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#6c71c4"></div><span>derived_from</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#cb4b16"></div><span>related_to</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#dc322f"></div><span>supersedes</span></div>
+      <div class="legend-item"><div class="swatch" style="background:#859900"></div><span>continues</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const BRANCH_COLORS = {
+  semantic: {bg:'#268bd2',border:'#1a6ba0',text:'#fdf6e3'},
+  episodic: {bg:'#2aa198',border:'#1e7a73',text:'#fdf6e3'},
+  procedural: {bg:'#b58900',border:'#8a6900',text:'#fdf6e3'},
+};
+const LINK_COLORS = {
+  instance_of:'#b58900', involves:'#2aa198', learned_from:'#268bd2',
+  derived_from:'#6c71c4', related_to:'#cb4b16', supersedes:'#dc322f', continues:'#859900',
+};
+let currentLayout = 'cose';
+let currentBranch = 'all';
+
+fetch('/benchmark/conv-42-graph.json').then(r => r.json()).then(data => {
+  document.getElementById('graph-stats').textContent = `${data.nodes.length} nodes, ${data.edges.length} edges`;
+
+  const elems = [];
+  data.nodes.forEach(n => {
+    const col = BRANCH_COLORS[n.memory_type] || {bg:'#586e75',border:'#073642',text:'#fdf6e3'};
+    elems.push({data:{
+      id:n.id, label:n.header, nodeType:n.type, memoryType:n.memory_type,
+      bgColor:col.bg, borderColor:col.border, textColor:col.text,
+      body:n.body||'', status:n.status
+    }});
+  });
+  data.edges.forEach(e => {
+    elems.push({data:{id:e.id, source:e.source_id, target:e.target_id, edgeType:e.type, linkType:e.link_type}});
+  });
+
+  window.cy = cytoscape({
+    container: document.getElementById('cy'),
+    elements: elems,
+    style: [
+      {selector:'node', style:{label:'data(label)','text-wrap':'wrap','text-max-width':'100px','font-size':'8px',
+        color:'data(textColor)','text-valign':'center','text-halign':'center','background-color':'data(bgColor)',
+        'border-color':'data(borderColor)','border-width':2,width:30,height:30,shape:'round-rectangle',padding:'4px'}},
+      {selector:"node[nodeType='root']",style:{'background-color':'#839496','border-color':'#657b83',width:45,height:45,'font-size':'11px','font-weight':'bold'}},
+      {selector:"node[nodeType='category']",style:{width:36,height:36,'font-size':'9px','font-weight':'bold'}},
+      {selector:"node[nodeType='memory']",style:{width:24,height:24,shape:'ellipse','font-size':'7px'}},
+      {selector:"edge[edgeType='CHILD']",style:{width:1.5,'line-color':'#586e75','target-arrow-color':'#586e75','target-arrow-shape':'triangle','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='instance_of']",style:{width:1,'line-color':'#b58900','target-arrow-color':'#b58900','target-arrow-shape':'triangle','line-style':'dashed','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='involves']",style:{width:1,'line-color':'#2aa198','target-arrow-color':'#2aa198','target-arrow-shape':'triangle','line-style':'dashed','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='learned_from']",style:{width:1,'line-color':'#268bd2','target-arrow-color':'#268bd2','target-arrow-shape':'triangle','line-style':'dashed','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='derived_from']",style:{width:1,'line-color':'#6c71c4','target-arrow-color':'#6c71c4','target-arrow-shape':'triangle','line-style':'dashed','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='related_to']",style:{width:1,'line-color':'#cb4b16','target-arrow-color':'#cb4b16','target-arrow-shape':'triangle','line-style':'dashed','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='supersedes']",style:{width:1,'line-color':'#dc322f','target-arrow-color':'#dc322f','target-arrow-shape':'triangle','line-style':'dashed','curve-style':'bezier',opacity:0.4}},
+      {selector:"edge[linkType='continues']",style:{width:1.5,'line-color':'#859900','target-arrow-color':'#859900','target-arrow-shape':'triangle','curve-style':'bezier',opacity:0.5}},
+      {selector:'node:selected',style:{'border-color':'#fdf6e3','border-width':3}},
+      {selector:'.highlighted',style:{'border-color':'#fdf6e3','border-width':3,opacity:1}},
+      {selector:'.dimmed',style:{opacity:0.08}},
+      {selector:'.search-match',style:{'border-color':'#b58900','border-width':3,opacity:1}},
+    ],
+    layout:{name:'cose',idealEdgeLength:80,nodeOverlap:20,animate:false},
+    wheelSensitivity:0.3, minZoom:0.1, maxZoom:4,
+  });
+
+  cy.on('tap','node', e => {
+    const d = e.target.data();
+    const col = BRANCH_COLORS[d.memoryType]||{bg:'#586e75',text:'#fdf6e3'};
+
+    // Highlight neighborhood
+    cy.elements().removeClass('highlighted dimmed');
+    const hood = e.target.neighborhood().add(e.target);
+    cy.elements().not(hood).addClass('dimmed');
+    hood.addClass('highlighted');
+
+    // Get lineage
+    let lineage = [];
+    let curr = e.target;
+    while (curr) {
+      const parent = curr.incomers("edge[edgeType='CHILD']").sources();
+      if (parent.length > 0) { lineage.unshift(parent[0].data('label')); curr = parent[0]; }
+      else { curr = null; }
+    }
+
+    document.getElementById('node-detail').innerHTML = `
+      <span class="badge" style="background:${col.bg};color:${col.text}">${d.memoryType||d.nodeType}</span>
+      <div class="node-lineage">${lineage.join(' > ')}</div>
+      <div class="node-header">${d.label}</div>
+      ${d.body ? '<div class="node-body">' + d.body + '</div>' : ''}
+      <div class="node-id">${d.id}</div>`;
+  });
+
+  cy.on('tap', e => {
+    if (e.target === cy) {
+      cy.elements().removeClass('highlighted dimmed search-match');
+      document.getElementById('node-detail').innerHTML = '<p style="opacity:0.3;">Click a node to see details</p>';
+    }
+  });
+});
+
+function searchNodes(query) {
+  if (!window.cy) return;
+  cy.elements().removeClass('search-match dimmed');
+  if (!query.trim()) return;
+  const q = query.toLowerCase();
+  const matches = cy.nodes().filter(n => {
+    const label = (n.data('label')||'').toLowerCase();
+    const body = (n.data('body')||'').toLowerCase();
+    return label.includes(q) || body.includes(q);
+  });
+  if (matches.length > 0) {
+    cy.elements().not(matches).addClass('dimmed');
+    matches.addClass('search-match');
+  }
+}
+
+function resetView() {
+  if (!window.cy) return;
+  cy.elements().removeClass('highlighted dimmed search-match branch-dim branch-sat');
+  cy.fit(undefined, 30);
+  document.getElementById('search').value = '';
+  currentBranch = 'all';
+  updateButtons();
+}
+
+function setLayout(type) {
+  if (!window.cy) return;
+  currentLayout = type === 'tree' ? 'dagre' : 'cose';
+  const opts = currentLayout === 'dagre'
+    ? {name:'dagre',rankDir:'TB',nodeSep:30,rankSep:50}
+    : {name:'cose',idealEdgeLength:80,nodeOverlap:20,animate:false};
+  cy.layout(opts).run();
+  cy.fit(undefined, 30);
+  updateButtons();
+}
+
+function focusBranch(branch) {
+  if (!window.cy) return;
+  currentBranch = branch;
+  cy.elements().removeClass('branch-dim branch-sat highlighted dimmed');
+
+  if (branch === 'all') {
+    cy.nodes().style({'opacity':''});
+    cy.edges().style({'opacity':''});
+    const opts = currentLayout === 'dagre'
+      ? {name:'dagre',rankDir:'TB',nodeSep:30,rankSep:50}
+      : {name:'cose',idealEdgeLength:80,nodeOverlap:20,animate:false};
+    cy.layout(opts).run();
+    cy.fit(undefined, 30);
+    updateButtons();
+    return;
+  }
+
+  // Dominant branch nodes
+  const dominant = cy.nodes().filter(n => n.data('memoryType') === branch || n.data('nodeType') === 'root');
+  // CHILD edges within dominant
+  const childEdges = cy.edges().filter(e => e.data('edgeType') === 'CHILD' && dominant.has(e.source()) && dominant.has(e.target()));
+  // LINK edges touching dominant
+  const linkEdges = cy.edges().filter(e => e.data('edgeType') === 'LINK');
+  // Satellites: linked to dominant but not in dominant
+  const satellites = cy.nodes().filter(n => {
+    if (dominant.has(n)) return false;
+    return linkEdges.some(e =>
+      (e.data('source') === n.id() && dominant.has(cy.getElementById(e.data('target')))) ||
+      (e.data('target') === n.id() && dominant.has(cy.getElementById(e.data('source'))))
+    );
+  });
+  const satEdges = linkEdges.filter(e =>
+    (satellites.has(e.source()) && dominant.has(e.target())) ||
+    (satellites.has(e.target()) && dominant.has(e.source())) ||
+    (dominant.has(e.source()) && satellites.has(e.target())) ||
+    (dominant.has(e.target()) && satellites.has(e.source()))
+  );
+
+  const visible = dominant.union(satellites);
+  const visibleEdges = childEdges.union(satEdges);
+  cy.nodes().not(visible).addClass('branch-dim');
+  cy.edges().not(visibleEdges).addClass('branch-dim');
+  satellites.addClass('branch-sat');
+
+  // Layout dominant as tree
+  cy.layout({name:'dagre',rankDir:'TB',nodeSep:50,rankSep:70,fit:false,eles:dominant.union(childEdges)}).run();
+
+  // Position satellites near their linked dominant node
+  satellites.forEach(sat => {
+    const linked = linkEdges.filter(e => e.data('source') === sat.id() || e.data('target') === sat.id())
+      .connectedNodes().filter(n => dominant.has(n));
+    if (linked.length > 0) {
+      const anchor = linked[0].position();
+      sat.position({x: anchor.x + 150 + Math.random()*60, y: anchor.y + (Math.random()-0.5)*120});
+    }
+  });
+
+  cy.fit(visible, 30);
+  updateButtons();
+}
+
+function updateButtons() {
+  ['cluster','tree'].forEach(t => {
+    const btn = document.getElementById('btn-'+t);
+    if (btn) btn.classList.toggle('active', (t==='cluster' && currentLayout==='cose') || (t==='tree' && currentLayout==='dagre'));
+  });
+  ['all','semantic','episodic','procedural'].forEach(b => {
+    const btn = document.getElementById('btn-'+b);
+    if (btn) btn.classList.toggle('active', b === currentBranch);
+  });
+}
+</script>
+</body>
+</html>
